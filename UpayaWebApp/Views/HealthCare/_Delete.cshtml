@@ -1,0 +1,64 @@
+﻿@model UpayaWebApp.HealthCareInfo
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>HealthCareInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HcProviders)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HcProviders)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HcFrequency)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HcFrequency)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HealthIssues)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HealthIssues)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TreatmentCostsQ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TreatmentCostsQ)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedSources)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedSources)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

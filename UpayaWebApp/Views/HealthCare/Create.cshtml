@@ -1,0 +1,86 @@
+﻿@model UpayaWebApp.HealthCareInfo
+
+@{
+    ViewBag.Title = "Create HealthCare";
+}
+
+<h2>Create HealthCare info for beneficiary @ViewBag.Beneficiary.Name</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.HcProviders, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @foreach (CheckBoxData cbd in ViewBag.HcProvidersCBData)
+                {
+                    @Html.CheckBox(cbd.Id.ToString(), cbd.Checked)
+                    @Html.Raw("&nbsp;" + cbd.Title + "<br />\n")
+                }
+                @Html.ValidationMessageFor(model => model.HcProviders)
+            </div>
+        </div>
+        <!--
+        <div class="form-group">
+            _Html.LabelFor(model => model.HcFrequency, new { _class = "control-label col-md-2" })
+            <div class="col-md-10">
+                _Html.EditorFor(model => model.HcFrequency)
+                _Html.ValidationMessageFor(model => model.HcFrequency)
+            </div>
+        </div>
+
+        <div class="form-group">
+            _Html.LabelFor(model => model.HealthIssues, new { _class = "control-label col-md-2" })
+            <div class="col-md-10">
+                _Html.EditorFor(model => model.HealthIssues)
+                _Html.ValidationMessageFor(model => model.HealthIssues)
+            </div>
+        </div>
+
+        <div class="form-group">
+            _Html.LabelFor(model => model.TreatmentCostsQ, new { _class = "control-label col-md-2" })
+            <div class="col-md-10">
+                _Html.EditorFor(model => model.TreatmentCostsQ)
+                _Html.ValidationMessageFor(model => model.TreatmentCostsQ)
+            </div>
+        </div>
+
+        <div class="form-group">
+            _Html.LabelFor(model => model.MedSources, new { _class = "control-label col-md-2" })
+            <div class="col-md-10">
+                _Html.EditorFor(model => model.MedSources)
+                _Html.ValidationMessageFor(model => model.MedSources)
+            </div>
+        </div>
+        -->
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.OrigEntryDate, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("OrigEntryDate")
+                @Html.ValidationMessageFor(model => model.OrigEntryDate)
+            </div>
+        </div>
+
+        <input type="hidden" name="Id" id="Id" value="@ViewBag.Beneficiary.Id" />
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index", new { bid = ViewBag.Beneficiary.Id }) |
+    @Html.ActionLink("Back to beneficiary", "Details", "Beneficiary", new { id = ViewBag.Beneficiary.Id }, null)
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

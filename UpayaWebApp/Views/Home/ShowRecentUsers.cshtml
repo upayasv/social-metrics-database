@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Dictionary<string,object>>
+
+@{
+    ViewBag.Title = "ShowRecentUsers";
+}
+
+<h2>Recent Users (latest 50, in the last 2 days)</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Login time (UTC)</th>
+        <th>Time ago</th>
+    </tr>
+
+    @foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.Raw(item["Name"])
+        </td>
+        <td>
+            @Html.Raw(item["Time"])
+        </td>
+        <td>
+            @Html.Raw(item["Ago"])
+        </td>
+    </tr>
+    }
+</table>

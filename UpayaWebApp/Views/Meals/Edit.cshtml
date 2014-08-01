@@ -1,0 +1,145 @@
+﻿@model UpayaWebApp.Meals
+
+@{
+    ViewBag.Title = "Edit Meals";
+}
+
+<h2>Edit meals for for beneficiary @ViewBag.Beneficiary.Name</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.AvgMealsPerDay, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AvgMealsPerDay)
+                @Html.ValidationMessageFor(model => model.AvgMealsPerDay)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.AvgNonVegPerMTypeId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("AvgNonVegPerMTypeId", String.Empty)
+                @Html.ValidationMessageFor(model => model.AvgNonVegPerMTypeId)
+            </div>
+        </div>
+
+        <!--
+        <div class="form-group">
+            _Html.LabelFor(model => model.AnyNonVegetarian, new { _class = "control-label col-md-2" })
+            <div class="col-md-10">
+                _Html.EditorFor(model => model.AnyNonVegetarian)
+                _Html.ValidationMessageFor(model => model.AnyNonVegetarian)
+            </div>
+        </div>
+
+        <div class="form-group">
+            _Html.LabelFor(model => model.AvgNonVegPerMonth, new { _class = "control-label col-md-2" })
+            <div class="col-md-10">
+                _Html.EditorFor(model => model.AvgNonVegPerMonth)
+                _Html.ValidationMessageFor(model => model.AvgNonVegPerMonth)
+            </div>
+        </div>
+
+        <div class="form-group">
+            Html.LabelFor(model => model.MealTypes, "MealTypes", new { class = "control-label col-md-2" })
+            <div class="col-md-10">
+                foreach (CheckBoxData cbd in ViewBag.MealTypesCBData)
+                {
+                    Html.CheckBox(cbd.Id.ToString(), cbd.Checked)
+                    Html.Raw("&nbsp;" + cbd.Title + "<br />\n")
+                }
+                Html.ValidationMessageFor(model => model.MealTypes)
+            </div>
+        </div>
+        -->
+        <div class="form-group">
+            @Html.LabelFor(model => model.FoodSourceTypes, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @foreach (CheckBoxData cbd in ViewBag.FoodSourceTypesCBData)
+                {
+                    @Html.CheckBox(cbd.Id.ToString(), cbd.Checked)
+                    @Html.Raw("&nbsp;" + cbd.Title + "<br />\n")
+                }
+                @Html.ValidationMessageFor(model => model.FoodSourceTypes)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MilkAsideAmount, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.MilkAsideAmount)
+                @Html.ValidationMessageFor(model => model.MilkAsideAmount)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CEGrains, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @foreach (CheckBoxData cbd in ViewBag.CEGrainsCBData)
+                {
+                    @Html.CheckBox(cbd.Id.ToString(), cbd.Checked)
+                    @Html.Raw("&nbsp;" + cbd.Title + "<br />\n")
+                }
+                @Html.ValidationMessageFor(model => model.CEGrains)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CEPulse, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @foreach (CheckBoxData cbd in ViewBag.CEPulseCBData)
+                {
+                    @Html.CheckBox(cbd.Id.ToString(), cbd.Checked)
+                    @Html.Raw("&nbsp;" + cbd.Title + "<br />\n")
+                }
+                @Html.ValidationMessageFor(model => model.CEPulse)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CEVegetables, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @foreach (CheckBoxData cbd in ViewBag.CEVegetablesCBData)
+                {
+                    @Html.CheckBox(cbd.Id.ToString(), cbd.Checked)
+                    @Html.Raw("&nbsp;" + cbd.Title + "<br />\n")
+                }
+                @Html.ValidationMessageFor(model => model.CEVegetables)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PKGPerMTypeId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("PKGPerMTypeId", String.Empty)
+                @Html.ValidationMessageFor(model => model.PKGPerMTypeId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.OrigEntryDate, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("OrigEntryDate", FormatHelper.FormatOrigDate(Model.OrigEntryDate))
+                @Html.ValidationMessageFor(model => model.OrigEntryDate)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to beneficiary", "Details", "Beneficiary", new { id = Model.Id }, null)
+</div>

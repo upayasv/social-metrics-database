@@ -1,0 +1,30 @@
+﻿Dec 22, 2013
+2. Staff members should be linked to a company.
+
+2/8/2014
+
+"Income generating activity" record (1-1 per benef)
+
+1. What do you currently do for a living? List: Weaving; Labor; Papad Making; Farming; Livestock; Production; Services; Trade; Non-Working
+2. Have you ever taken a microfinance loan?	 Yes/No
+3. If you have taken a microfinance/SHG loan, what was the loan used for? List: Client Livelihood; Spouse Livelihood; Food; Housing Material; Festival; Marriage; Clothes; Education; Repay Other Loan; Lending to Friend or Relative; Other
+4. How many months in a year do you get weaving work? Number (1-12)
+5. In the month that you get weaving work, approximately how many days do you get work?	Number (1-31)
+6. How much do you earn in the months that you get weaving work? (Rs.)	Number
+7. Do you or any family member work as a manual laborer (agricultural/construction)? Yes/No
+8. How many days per month do you or someone else in your household work as a laborer?	Number (1-31)
+9. How much do you earn per day as a laborer? (Rs.)	Number
+10. Do any of your sons or daughters work outside your town? Yes/No
+11. If so, how much money do they remit per month?	Number
+12. What is the most suitable time in a day you'll be available for a meeting when necessary?	List: Dawn; Late Morning; Noon; Late Afternoon; Dusk; Late Night;
+
+
+
+
+
+
+
+
+
+
+

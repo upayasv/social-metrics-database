@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AccountTables">
+  <DataContextMoniker Name="/AccountTablesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="93ff9776-c717-4421-94a7-31b393c7b044" absoluteBounds="0.5, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/AccountTablesDataContext/AspNetUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b37fb15c-16cb-470f-bea3-b6b647ec73f4" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5ad05836-8369-44e7-bb62-60ed6d4cdca8" absoluteBounds="3.375, 0.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/AccountTablesDataContext/AspNetUserRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1c295f07-b7f3-42e8-ac9c-d0e9d4017e98" absoluteBounds="3.3899999999999997, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 1.34699625651042); (3.375 : 1.34699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AccountTablesDataContext/AspNetUser/AspNetUser_AspNetUserRole" />
+      <nodes>
+        <classShapeMoniker Id="93ff9776-c717-4421-94a7-31b393c7b044" />
+        <classShapeMoniker Id="5ad05836-8369-44e7-bb62-60ed6d4cdca8" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="df118a85-63ce-4c2f-9133-97073a41d350" absoluteBounds="3.375, 2.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/AccountTablesDataContext/AspNetRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5ea655c5-79ac-4bd1-aadb-8735303984f6" absoluteBounds="3.39, 3.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.375 : 2.75); (4.375 : 1.94399251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AccountTablesDataContext/AspNetRole/AspNetRole_AspNetUserRole" />
+      <nodes>
+        <classShapeMoniker Id="df118a85-63ce-4c2f-9133-97073a41d350" />
+        <classShapeMoniker Id="5ad05836-8369-44e7-bb62-60ed6d4cdca8" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

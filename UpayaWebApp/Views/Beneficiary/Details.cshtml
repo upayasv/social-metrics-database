@@ -1,0 +1,231 @@
+﻿@model UpayaWebApp.Beneficiary
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Beneficiary Details</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UniqueId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UniqueId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Block)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Block)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            Birthday
+        </dt>
+        <dd>
+            @FormatHelper.FormatDate(Model.BirthDay, Model.BirthMonth, Model.BirthYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GenderId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gender.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TownId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Town.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Disability)
+        </dt>
+
+        <dd>
+            @FormatHelper.FormatBool(Model.Disability)
+            @if (Model.Disability)
+            {
+                @Html.Raw(" " + ViewBag.DisabilitiesValue)
+            }
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EducationLevelId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EducationLevel.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimaryOccupationId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrimaryOccupation.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondaryOccupationId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SecondaryOccupation.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimaryWorkDaysM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrimaryWorkDaysM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondaryWorkDaysM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SecondaryWorkDaysM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimaryDailyWage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrimaryDailyWage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondaryDailyWage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SecondaryDailyWage)
+        </dd>
+
+        <dt>
+            StartDate
+        </dt>
+        <dd>
+            @FormatHelper.FormatDate(Model.StartDateDay, Model.StartDateMonth, Model.StartDateYear.Value)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrigEntryDate)
+        </dt>
+        <dd>
+            @FormatHelper.FormatOrigDate(Model.OrigEntryDate)
+        </dd>
+    </dl>
+</div>
+
+        <hr />
+        <table>
+            <tr><th>Household info</th><th width="20"> </th><th>Surveys</th></tr>
+            <tr>
+                <td valign="top">
+                    <div>
+                        <dl class="dl-horizontal">
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Adults)
+                            </dt>
+                            <dd>
+                                @if (Model.Adults == null || Model.Adults.Count() == 0)
+                                {
+                                    <text>0 </text>
+                                    @Html.ActionLink("Add adult", "Create", "Adult", new { bid = Model.Id }, null)
+                                }
+                                else
+                                {
+                                    @Model.Adults.Count()
+                                    @Html.Raw("&nbsp;")
+                                    @Html.ActionLink("List adults", "Index", "Adult", new { bid = Model.Id }, null)
+                                }
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Children)
+                            </dt>
+                            <dd>
+                                @if (Model.Children == null || Model.Children.Count() == 0)
+                                {
+                                    <text>0 </text>
+                                    @Html.ActionLink("Add child", "Create", "Child", new { bid = Model.Id }, null)
+                                }
+                                else
+                                {
+                                    @Model.Children.Count()
+                                    @Html.Raw("&nbsp;")
+                                    @Html.ActionLink("List children", "Index", "Child", new { bid = Model.Id }, null)
+                                }
+                            </dd>
+                            <dt>
+                                @Html.DisplayNameFor(model => model.HouseholdAssets)
+                            </dt>
+                            <dd>
+                                @if (Model.HouseholdAssets == null || Model.HouseholdAssets.Count() == 0)
+                                {
+                                    <text>0 </text>
+                                    @Html.ActionLink("Add asset", "Create", "HouseholdAsset", new { bid = Model.Id }, null)
+                                }
+                                else
+                                {
+                                    @Model.HouseholdAssets.Count()
+                                    @Html.Raw("&nbsp;")
+                                    @Html.ActionLink("List assets", "Index", "HouseholdAsset", new { bid = Model.Id }, null)
+                                }
+                            </dd>
+                        </dl>
+                    </div>
+                </td>
+                <td> </td>
+                <td valign="top">
+                    <div>
+                        @if (Model.Meals == null) { 
+                            <div style="width: 12px; height: 12px; background-color: red; float: left; margin-right: 5px;"></div>
+                        }
+                        @Html.ActionLink("Meal details", "Details", "Meals", new { id = Model.Id }, null)
+                        <br />
+                        @if (Model.MajorExpensesInfo == null) {
+                            <div style="width: 12px; height: 12px; background-color: red; float: left; margin-right: 5px;"></div>
+                        }
+                        @Html.ActionLink("Major expenses", "Details", "MajorExpenses", new { id = Model.Id }, null)
+                        <br />
+                        @if (Model.HealthCareInfo == null) {
+                            <div style="width: 12px; height: 12px; background-color: red; float: left; margin-right: 5px;"></div>
+                        }
+                        @Html.ActionLink("Healthcare details", "Details", "HealthCare", new { id = Model.Id }, null)
+                        <br />
+                        @if (Model.GovernmentServicesInfo == null) {
+                            <div style="width: 12px; height: 12px; background-color: red; float: left; margin-right: 5px;"></div>
+                        }
+                        @Html.ActionLink("Government Services", "Details", "GovServices", new { id = Model.Id }, null)
+                        <br />
+                        @if (Model.HousingInfo == null) {
+                            <div style="width: 12px; height: 12px; background-color: red; float: left; margin-right: 5px;"></div>
+                        }
+                        @Html.ActionLink("Housing info", "Details", "HousingInfo", new { id = Model.Id }, null)
+                    </div>
+                </td>
+            </tr>
+        </table>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

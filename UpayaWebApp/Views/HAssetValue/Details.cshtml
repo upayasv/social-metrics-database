@@ -1,0 +1,31 @@
+﻿@model UpayaWebApp.HAssetValue
+
+@{
+    ViewBag.Title = "Household Asset Value Details";
+}
+
+<h2>Household Asset Value Details</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AssetType.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssetType.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Value)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Value)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

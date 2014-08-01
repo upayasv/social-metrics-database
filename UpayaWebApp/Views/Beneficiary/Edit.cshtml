@@ -1,0 +1,210 @@
+﻿@model UpayaWebApp.Beneficiary
+
+@{
+    ViewBag.Title = "Edit Beneficiary";
+}
+
+<h2>Edit Beneficiary</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.UniqueId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.UniqueId)
+                @Html.ValidationMessageFor(model => model.UniqueId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.GenderId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("GenderId", String.Empty)
+                @Html.ValidationMessageFor(model => model.GenderId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TownId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("TownId", String.Empty)
+                @Html.ValidationMessageFor(model => model.TownId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Block, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Block)
+                @Html.ValidationMessageFor(model => model.Block)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Phone, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Phone)
+                @Html.ValidationMessageFor(model => model.Phone)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Disability, "Disability", new { @class = "control-label col-md-2" })
+            <table><tr><td valign="top">
+                <div class="col-md-10">
+                    @Html.CheckBox("Disability", Model.Disability)
+                    @Html.ValidationMessageFor(model => model.Disability)
+                </div>
+            </td><td>
+                <div>
+                    @foreach (CheckBoxData cbd in ViewBag.DisabilitiesCBData)
+                    {
+                        @Html.CheckBox(cbd.Id.ToString(), cbd.Checked)
+                        @Html.Raw("&nbsp;" + cbd.Title + "<br />\n")
+                    }
+                </div>
+            </td></tr></table>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EducationLevelId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("EducationLevelId", String.Empty)
+                @Html.ValidationMessageFor(model => model.EducationLevelId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.BirthDay, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.BirthDay)
+                @Html.ValidationMessageFor(model => model.BirthDay)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.BirthMonth, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.BirthMonth)
+                @Html.ValidationMessageFor(model => model.BirthMonth)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.BirthYear, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.BirthYear)
+                @Html.ValidationMessageFor(model => model.BirthYear)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryOccupationId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("PrimaryOccupationId", String.Empty)*
+                @Html.ValidationMessageFor(model => model.PrimaryOccupationId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SecondaryOccupationId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("SecondaryOccupationId", String.Empty)*
+                @Html.ValidationMessageFor(model => model.SecondaryOccupationId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryWorkDaysM, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PrimaryWorkDaysM)
+                @Html.ValidationMessageFor(model => model.PrimaryWorkDaysM)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SecondaryWorkDaysM, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SecondaryWorkDaysM)
+                @Html.ValidationMessageFor(model => model.SecondaryWorkDaysM)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryDailyWage, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PrimaryDailyWage)
+                @Html.ValidationMessageFor(model => model.PrimaryDailyWage)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SecondaryDailyWage, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SecondaryDailyWage)
+                @Html.ValidationMessageFor(model => model.SecondaryDailyWage)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.StartDateDay, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.StartDateDay)
+                @Html.ValidationMessageFor(model => model.StartDateDay)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.StartDateMonth, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.StartDateMonth)
+                @Html.ValidationMessageFor(model => model.StartDateMonth)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.StartDateYear, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.StartDateYear)
+                @Html.ValidationMessageFor(model => model.StartDateYear)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.OrigEntryDate, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("OrigEntryDate", FormatHelper.FormatOrigDate(Model.OrigEntryDate))
+                @Html.ValidationMessageFor(model => model.OrigEntryDate)
+            </div>
+        </div>
+
+        <input type="hidden" name="PCompanyId" id="PCompanyId" value="@Model.PCompanyId" />
+        <input type="hidden" name="ReligionId" id="ReligionId" value="@Model.ReligionId" />
+        <input type="hidden" name="CasteId" id="CasteId" value="@Model.CasteId" />
+        <input type="hidden" name="LanguageId" id="LanguageId" value="@Model.LanguageId" />
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

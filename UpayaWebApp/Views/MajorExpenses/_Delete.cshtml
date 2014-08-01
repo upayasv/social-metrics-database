@@ -1,0 +1,112 @@
+﻿@model UpayaWebApp.MajorExpensesInfo
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>MajorExpensesInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FoodM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FoodM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RentM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RentM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SchoolFeesM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SchoolFeesM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WaterAndElecM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WaterAndElecM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CableTvDishM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CableTvDishM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoanRepaymentsM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoanRepaymentsM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlcoholM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlcoholM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CinemaFestivFunctA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CinemaFestivFunctA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoomRelA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoomRelA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherExp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherExp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherExpDescr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherExpDescr)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

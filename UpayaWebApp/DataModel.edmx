@@ -1,0 +1,3607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DataModelStoreContainer">
+    <EntitySet Name="PartnerCompanies" EntityType="DataModel.Store.PartnerCompanies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Towns" EntityType="DataModel.Store.Towns" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Countries" EntityType="DataModel.Store.Countries" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Beneficiaries" EntityType="DataModel.Store.Beneficiaries" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Genders" EntityType="DataModel.Store.Genders" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Religions" EntityType="DataModel.Store.Religions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Castes" EntityType="DataModel.Store.Castes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Disabilities" EntityType="DataModel.Store.Disabilities" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EducationLevels" EntityType="DataModel.Store.EducationLevels" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adults" EntityType="DataModel.Store.Adults" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdultRelationships" EntityType="DataModel.Store.AdultRelationships" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Children" EntityType="DataModel.Store.Children" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ChildRelationships" EntityType="DataModel.Store.ChildRelationships" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SchoolTypes" EntityType="DataModel.Store.SchoolTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ClassLevels" EntityType="DataModel.Store.ClassLevels" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PartnerStaffMembers" EntityType="DataModel.Store.PartnerStaffMembers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StaffTypes" EntityType="DataModel.Store.StaffTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Languages" EntityType="DataModel.Store.Languages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PartnerAdmins" EntityType="DataModel.Store.PartnerAdmins" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AssetTypes" EntityType="DataModel.Store.AssetTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HouseholdAssets" EntityType="DataModel.Store.HouseholdAssets" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Meals" EntityType="DataModel.Store.Meals" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MealTypes" EntityType="DataModel.Store.MealTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FoodSourceTypes" EntityType="DataModel.Store.FoodSourceTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Logins" EntityType="DataModel.Store.Logins" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HAssetValues" EntityType="DataModel.Store.HAssetValues" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SchoolDistances" EntityType="DataModel.Store.SchoolDistances" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Occupations" EntityType="DataModel.Store.Occupations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="States" EntityType="DataModel.Store.States" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Districts" EntityType="DataModel.Store.Districts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SchoolDaysPerWeek" EntityType="DataModel.Store.SchoolDaysPerWeek" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MajorExpenses" EntityType="DataModel.Store.MajorExpenses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HealthCareInfos" EntityType="DataModel.Store.HealthCareInfos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HcProviderTypes" EntityType="DataModel.Store.HcProviderTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HealthIssueTypes" EntityType="DataModel.Store.HealthIssueTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MedSourceTypes" EntityType="DataModel.Store.MedSourceTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GovernmentServices" EntityType="DataModel.Store.GovernmentServices" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GovCardTypes" EntityType="DataModel.Store.GovCardTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GovServiceTypes" EntityType="DataModel.Store.GovServiceTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HousingInfoes" EntityType="DataModel.Store.HousingInfoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NumberOfRoomsTypes" EntityType="DataModel.Store.NumberOfRoomsTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RoofMaterialTypes" EntityType="DataModel.Store.RoofMaterialTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WallMaterialTypes" EntityType="DataModel.Store.WallMaterialTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WaterSourceTypes" EntityType="DataModel.Store.WaterSourceTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ToiletTypes" EntityType="DataModel.Store.ToiletTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CookingEnergyTypes" EntityType="DataModel.Store.CookingEnergyTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HouseQualityTypes" EntityType="DataModel.Store.HouseQualityTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WaterSourceDistanceTypes" EntityType="DataModel.Store.WaterSourceDistanceTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HouseOwnershipTypes" EntityType="DataModel.Store.HouseOwnershipTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SavingsTypes" EntityType="DataModel.Store.SavingsTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LoanPurposeTypes" EntityType="DataModel.Store.LoanPurposeTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GrainTypes" EntityType="DataModel.Store.GrainTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PulseTypes" EntityType="DataModel.Store.PulseTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VegetableTypes" EntityType="DataModel.Store.VegetableTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PKG_M_Type" EntityType="DataModel.Store.PKG_M_Type" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HistoryRecs" EntityType="DataModel.Store.HistoryRecs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AvgNonVegPerMTypes" EntityType="DataModel.Store.AvgNonVegPerMTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PKGPerMTypes" EntityType="DataModel.Store.PKGPerMTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WhyNotInSchoolTypes" EntityType="DataModel.Store.WhyNotInSchoolTypes" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="TownCountry" Association="DataModel.Store.TownCountry">
+      <End Role="Town" EntitySet="Towns" />
+      <End Role="Country" EntitySet="Countries" />
+    </AssociationSet>
+    <AssociationSet Name="BeneficiaryGender" Association="DataModel.Store.BeneficiaryGender">
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+      <End Role="Gender" EntitySet="Genders" />
+    </AssociationSet>
+    <AssociationSet Name="ReligionBeneficiary" Association="DataModel.Store.ReligionBeneficiary">
+      <End Role="Religion" EntitySet="Religions" />
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+    </AssociationSet>
+    <AssociationSet Name="TownBeneficiary" Association="DataModel.Store.TownBeneficiary">
+      <End Role="Town" EntitySet="Towns" />
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+    </AssociationSet>
+    <AssociationSet Name="EducationLevelBeneficiary" Association="DataModel.Store.EducationLevelBeneficiary">
+      <End Role="EducationLevel" EntitySet="EducationLevels" />
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+    </AssociationSet>
+    <AssociationSet Name="GenderAdult" Association="DataModel.Store.GenderAdult">
+      <End Role="Gender" EntitySet="Genders" />
+      <End Role="Adult" EntitySet="Adults" />
+    </AssociationSet>
+    <AssociationSet Name="EducationLevelAdult" Association="DataModel.Store.EducationLevelAdult">
+      <End Role="EducationLevel" EntitySet="EducationLevels" />
+      <End Role="Adult" EntitySet="Adults" />
+    </AssociationSet>
+    <AssociationSet Name="BeneficiaryAdult" Association="DataModel.Store.BeneficiaryAdult">
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+      <End Role="Adult" EntitySet="Adults" />
+    </AssociationSet>
+    <AssociationSet Name="GenderChild" Association="DataModel.Store.GenderChild">
+      <End Role="Gender" EntitySet="Genders" />
+      <End Role="Child" EntitySet="Children" />
+    </AssociationSet>
+    <AssociationSet Name="ChildBeneficiary" Association="DataModel.Store.ChildBeneficiary">
+      <End Role="Child" EntitySet="Children" />
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+    </AssociationSet>
+    <AssociationSet Name="SchoolTypeChild" Association="DataModel.Store.SchoolTypeChild">
+      <End Role="SchoolType" EntitySet="SchoolTypes" />
+      <End Role="Child" EntitySet="Children" />
+    </AssociationSet>
+    <AssociationSet Name="ClassLevelChild" Association="DataModel.Store.ClassLevelChild">
+      <End Role="ClassLevel" EntitySet="ClassLevels" />
+      <End Role="Child" EntitySet="Children" />
+    </AssociationSet>
+    <AssociationSet Name="GenderPartnerStaffMember" Association="DataModel.Store.GenderPartnerStaffMember">
+      <End Role="Gender" EntitySet="Genders" />
+      <End Role="PartnerStaffMember" EntitySet="PartnerStaffMembers" />
+    </AssociationSet>
+    <AssociationSet Name="StaffTypePartnerStaffMember" Association="DataModel.Store.StaffTypePartnerStaffMember">
+      <End Role="StaffType" EntitySet="StaffTypes" />
+      <End Role="PartnerStaffMember" EntitySet="PartnerStaffMembers" />
+    </AssociationSet>
+    <AssociationSet Name="LanguageBeneficiary" Association="DataModel.Store.LanguageBeneficiary">
+      <End Role="Language" EntitySet="Languages" />
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+    </AssociationSet>
+    <AssociationSet Name="CasteBeneficiary" Association="DataModel.Store.CasteBeneficiary">
+      <End Role="Caste" EntitySet="Castes" />
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+    </AssociationSet>
+    <AssociationSet Name="PartnerCompanyPartnerStaffMember" Association="DataModel.Store.PartnerCompanyPartnerStaffMember">
+      <End Role="PartnerCompany" EntitySet="PartnerCompanies" />
+      <End Role="PartnerStaffMember" EntitySet="PartnerStaffMembers" />
+    </AssociationSet>
+    <AssociationSet Name="PartnerCompanyPartnerAdmin" Association="DataModel.Store.PartnerCompanyPartnerAdmin">
+      <End Role="PartnerCompany" EntitySet="PartnerCompanies" />
+      <End Role="PartnerAdmin" EntitySet="PartnerAdmins" />
+    </AssociationSet>
+    <AssociationSet Name="HouseholdAsset2AssetType" Association="DataModel.Store.HouseholdAsset2AssetType">
+      <End Role="HouseholdAsset" EntitySet="HouseholdAssets" />
+      <End Role="AssetType" EntitySet="AssetTypes" />
+    </AssociationSet>
+    <AssociationSet Name="Beneficiary2HouseholdAsset" Association="DataModel.Store.Beneficiary2HouseholdAsset">
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+      <End Role="HouseholdAsset" EntitySet="HouseholdAssets" />
+    </AssociationSet>
+    <AssociationSet Name="Child2ChildRelationship" Association="DataModel.Store.Child2ChildRelationship">
+      <End Role="Child" EntitySet="Children" />
+      <End Role="ChildRelationship" EntitySet="ChildRelationships" />
+    </AssociationSet>
+    <AssociationSet Name="Adult2AdultRelationship" Association="DataModel.Store.Adult2AdultRelationship">
+      <End Role="Adult" EntitySet="Adults" />
+      <End Role="AdultRelationship" EntitySet="AdultRelationships" />
+    </AssociationSet>
+    <AssociationSet Name="Beneficiary2Meals" Association="DataModel.Store.Beneficiary2Meals">
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+      <End Role="Meals" EntitySet="Meals" />
+    </AssociationSet>
+    <AssociationSet Name="HAssetValueAssetType" Association="DataModel.Store.HAssetValue2AssetType">
+      <End Role="HAssetValue" EntitySet="HAssetValues" />
+      <End Role="AssetType" EntitySet="AssetTypes" />
+    </AssociationSet>
+    <AssociationSet Name="PartnerCompany2HAssetValue" Association="DataModel.Store.PartnerCompany2HAssetValue">
+      <End Role="PartnerCompany" EntitySet="PartnerCompanies" />
+      <End Role="HAssetValue" EntitySet="HAssetValues" />
+    </AssociationSet>
+    <AssociationSet Name="Child2SchoolDistance" Association="DataModel.Store.Child2SchoolDistance">
+      <End Role="Child" EntitySet="Children" />
+      <End Role="SchoolDistance" EntitySet="SchoolDistances" />
+    </AssociationSet>
+    <AssociationSet Name="State2Country" Association="DataModel.Store.State2Country">
+      <End Role="State" EntitySet="States" />
+      <End Role="Country" EntitySet="Countries" />
+    </AssociationSet>
+    <AssociationSet Name="DistrictState" Association="DataModel.Store.District2State">
+      <End Role="District" EntitySet="Districts" />
+      <End Role="State" EntitySet="States" />
+    </AssociationSet>
+    <AssociationSet Name="Town2State" Association="DataModel.Store.Town2State">
+      <End Role="Town" EntitySet="Towns" />
+      <End Role="State" EntitySet="States" />
+    </AssociationSet>
+    <AssociationSet Name="Town2District" Association="DataModel.Store.Town2District">
+      <End Role="Town" EntitySet="Towns" />
+      <End Role="District" EntitySet="Districts" />
+    </AssociationSet>
+    <AssociationSet Name="SchoolDaysPerWeek2Child" Association="DataModel.Store.SchoolDaysPerWeek2Child">
+      <End Role="SchoolDayPerWeek" EntitySet="SchoolDaysPerWeek" />
+      <End Role="Child" EntitySet="Children" />
+    </AssociationSet>
+    <AssociationSet Name="Beneficiary2MajorExpenses" Association="DataModel.Store.Beneficiary2MajorExpenses">
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+      <End Role="MajorExpensesInfo" EntitySet="MajorExpenses" />
+    </AssociationSet>
+    <AssociationSet Name="Beneficiary2HealthCareInfo" Association="DataModel.Store.Beneficiary2HealthCareInfo">
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+      <End Role="HealthCareInfo" EntitySet="HealthCareInfos" />
+    </AssociationSet>
+    <AssociationSet Name="Beneficiary2GovernmentServices" Association="DataModel.Store.Beneficiary2GovernmentServices">
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+      <End Role="GovernmentServicesInfo" EntitySet="GovernmentServices" />
+    </AssociationSet>
+    <AssociationSet Name="HousingInfo2NumberOfRooms" Association="DataModel.Store.HousingInfo2NumberOfRooms">
+      <End Role="HousingInfo" EntitySet="HousingInfoes" />
+      <End Role="NumberOfRoomsType" EntitySet="NumberOfRoomsTypes" />
+    </AssociationSet>
+    <AssociationSet Name="HousingInfo2RoofMaterial" Association="DataModel.Store.HousingInfo2RoofMaterial">
+      <End Role="HousingInfo" EntitySet="HousingInfoes" />
+      <End Role="RoofMaterialType" EntitySet="RoofMaterialTypes" />
+    </AssociationSet>
+    <AssociationSet Name="HousingInfo2WallMaterial" Association="DataModel.Store.HousingInfo2WallMaterial">
+      <End Role="HousingInfo" EntitySet="HousingInfoes" />
+      <End Role="WallMaterialType" EntitySet="WallMaterialTypes" />
+    </AssociationSet>
+    <AssociationSet Name="HousingInfo2CookingEnergyType" Association="DataModel.Store.HousingInfo2CookingEnergyType">
+      <End Role="HousingInfo" EntitySet="HousingInfoes" />
+      <End Role="CookingEnergyType" EntitySet="CookingEnergyTypes" />
+    </AssociationSet>
+    <AssociationSet Name="Beneficiary2HousingInfo" Association="DataModel.Store.Beneficiary2HousingInfo">
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+      <End Role="HousingInfo" EntitySet="HousingInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="HousingInfo2ToiletType" Association="DataModel.Store.HousingInfo2ToiletType">
+      <End Role="HousingInfo" EntitySet="HousingInfoes" />
+      <End Role="ToiletType" EntitySet="ToiletTypes" />
+    </AssociationSet>
+    <AssociationSet Name="HousingInfoHouseQuality" Association="DataModel.Store.HousingInfoHouseQuality">
+      <End Role="HousingInfo" EntitySet="HousingInfoes" />
+      <End Role="HouseQuality" EntitySet="HouseQualityTypes" />
+    </AssociationSet>
+    <AssociationSet Name="Beneficiary2PriOccupation" Association="DataModel.Store.Beneficiary2PriOccupation">
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+      <End Role="Occupation" EntitySet="Occupations" />
+    </AssociationSet>
+    <AssociationSet Name="Beneficiary2SecOccupation" Association="DataModel.Store.Beneficiary2SecOccupation">
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+      <End Role="Occupation" EntitySet="Occupations" />
+    </AssociationSet>
+    <AssociationSet Name="Religion2HousingInfo" Association="DataModel.Store.Religion2HousingInfo">
+      <End Role="Religion" EntitySet="Religions" />
+      <End Role="HousingInfo" EntitySet="HousingInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="Caste2HousingInfo" Association="DataModel.Store.Caste2HousingInfo">
+      <End Role="Caste" EntitySet="Castes" />
+      <End Role="HousingInfo" EntitySet="HousingInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="HouseOwnershipType2HousingInfo" Association="DataModel.Store.HouseOwnershipType2HousingInfo">
+      <End Role="HouseOwnershipType" EntitySet="HouseOwnershipTypes" />
+      <End Role="HousingInfo" EntitySet="HousingInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="WaterSourceDistanceType2HousingInfo" Association="DataModel.Store.WaterSourceDistanceType2HousingInfo">
+      <End Role="WaterSourceDistanceType" EntitySet="WaterSourceDistanceTypes" />
+      <End Role="HousingInfo" EntitySet="HousingInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="AvgNonVegPerMType2Meals" Association="DataModel.Store.AvgNonVegPerMType2Meals">
+      <End Role="AvgNonVegPerMType" EntitySet="AvgNonVegPerMTypes" />
+      <End Role="Meals" EntitySet="Meals" />
+    </AssociationSet>
+    <AssociationSet Name="PKGPerMType2Meals" Association="DataModel.Store.PKGPerMType2Meals">
+      <End Role="PKGPerMType" EntitySet="PKGPerMTypes" />
+      <End Role="Meals" EntitySet="Meals" />
+    </AssociationSet>
+    <AssociationSet Name="PrimaryOccupation2Adult" Association="DataModel.Store.PrimaryOccupation2Adult">
+      <End Role="Occupation" EntitySet="Occupations" />
+      <End Role="Adult" EntitySet="Adults" />
+    </AssociationSet>
+    <AssociationSet Name="SecondaryOccupation2Adult" Association="DataModel.Store.SecondaryOccupation2Adult">
+      <End Role="Occupation" EntitySet="Occupations" />
+      <End Role="Adult" EntitySet="Adults" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="PartnerCompanies">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="80" />
+    <Property Name="Phone" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="Fax" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="StartDateDay" Type="tinyint" Nullable="true" />
+    <Property Name="StartDateMonth" Type="tinyint" Nullable="true" />
+    <Property Name="StartDateYear" Type="smallint" Nullable="false" />
+    <Property Name="Status" Type="tinyint" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Towns">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CountryId" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="StateId" Type="smallint" Nullable="false" />
+    <Property Name="DistrictId" Type="smallint" Nullable="false" />
+    <Property Name="PostalCode" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Beneficiaries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="GenderId" Type="tinyint" Nullable="false" />
+    <Property Name="ReligionId" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="TownId" Type="int" Nullable="false" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Disability" Type="bit" Nullable="false" />
+    <Property Name="Disabilities" Type="varchar" Nullable="true" MaxLength="80" />
+    <Property Name="EducationLevelId" Type="smallint" Nullable="false" />
+    <Property Name="BirthDay" Type="tinyint" Nullable="true" />
+    <Property Name="BirthMonth" Type="tinyint" Nullable="true" />
+    <Property Name="BirthYear" Type="smallint" Nullable="false" />
+    <Property Name="LanguageId" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CasteId" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="UniqueId" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Status" Type="tinyint" Nullable="true" />
+    <Property Name="PhotoUrl" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Block" Type="nvarchar" Nullable="true" MaxLength="60" />
+    <Property Name="PrimaryOccupationId" Type="tinyint" Nullable="false" />
+    <Property Name="SecondaryOccupationId" Type="tinyint" Nullable="false" />
+    <Property Name="PrimaryWorkDaysM" Type="tinyint" Nullable="true" />
+    <Property Name="SecondaryWorkDaysM" Type="tinyint" Nullable="true" />
+    <Property Name="PrimaryDailyWage" Type="smallint" Nullable="true" />
+    <Property Name="SecondaryDailyWage" Type="smallint" Nullable="true" />
+    <Property Name="StartDateDay" Type="tinyint" Nullable="true" />
+    <Property Name="StartDateMonth" Type="tinyint" Nullable="true" />
+    <Property Name="StartDateYear" Type="smallint" Nullable="true" />
+    <Property Name="OrigEntryDate" Type="datetime" Nullable="true" />
+    <Property Name="PCompanyId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Genders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Religions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Castes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Disabilities">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EducationLevels">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Adults">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="GenderId" Type="tinyint" Nullable="false" />
+    <Property Name="EducationLevelId" Type="smallint" Nullable="false" />
+    <Property Name="BeneficiaryId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AdultRelationshipId" Type="tinyint" Nullable="false" />
+    <Property Name="Disability" Type="bit" Nullable="false" />
+    <Property Name="Disabilities" Type="varchar" Nullable="true" MaxLength="80" />
+    <Property Name="BirthDay" Type="tinyint" Nullable="true" />
+    <Property Name="BirthMonth" Type="tinyint" Nullable="true" />
+    <Property Name="BirthYear" Type="smallint" Nullable="false" />
+    <Property Name="Status" Type="tinyint" Nullable="true" />
+    <Property Name="EmplSameCompany" Type="bit" Nullable="false" />
+    <Property Name="PrimaryOccupationId" Type="tinyint" Nullable="false" />
+    <Property Name="SecondaryOccupationId" Type="tinyint" Nullable="false" />
+    <Property Name="PrimaryWorkDaysM" Type="tinyint" Nullable="true" />
+    <Property Name="SecondaryWorkDaysM" Type="tinyint" Nullable="true" />
+    <Property Name="PrimaryDailyWage" Type="smallint" Nullable="true" />
+    <Property Name="SecondaryDailyWage" Type="smallint" Nullable="true" />
+    <Property Name="OrigEntryDate" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="AdultRelationships">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Children">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="BeneficiaryId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="GenderId" Type="tinyint" Nullable="false" />
+    <Property Name="ChildRelationshipId" Type="tinyint" Nullable="false" />
+    <Property Name="Disability" Type="bit" Nullable="false" />
+    <Property Name="Disabilities" Type="varchar" Nullable="true" MaxLength="80" />
+    <Property Name="EnrolledInSchool" Type="bit" Nullable="false" />
+    <Property Name="WhyNotInSchool" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="SchoolTypeId" Type="tinyint" Nullable="true" />
+    <Property Name="SchoolDistanceId" Type="tinyint" Nullable="true" />
+    <Property Name="ClassLevelId" Type="tinyint" Nullable="true" />
+    <Property Name="MonthlyEduExpenses" Type="float" Nullable="true" DefaultValue="0" />
+    <Property Name="BirthDay" Type="tinyint" Nullable="true" />
+    <Property Name="BirthMonth" Type="tinyint" Nullable="true" />
+    <Property Name="BirthYear" Type="smallint" Nullable="false" />
+    <Property Name="Status" Type="tinyint" Nullable="true" />
+    <Property Name="SchoolAttendance" Type="tinyint" Nullable="true" />
+    <Property Name="OrigEntryDate" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="ChildRelationships">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SchoolTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClassLevels">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PartnerStaffMembers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="GenderId" Type="tinyint" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="Phone" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="BirthDay" Type="tinyint" Nullable="true" />
+    <Property Name="BirthMonth" Type="tinyint" Nullable="true" />
+    <Property Name="BirthYear" Type="smallint" Nullable="false" />
+    <Property Name="StaffTypeId" Type="tinyint" Nullable="false" />
+    <Property Name="InternalPartnerEmployeeId" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="PartnerCompanyId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Status" Type="tinyint" Nullable="true" />
+  </EntityType>
+  <EntityType Name="StaffTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Languages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PartnerAdmins">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PartnerCompanyId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Status" Type="tinyint" Nullable="true" />
+  </EntityType>
+  <EntityType Name="AssetTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HouseholdAssets">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AssetTypeId" Type="smallint" Nullable="false" />
+    <Property Name="BeneficiaryId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Count" Type="smallint" Nullable="false" />
+    <Property Name="TotalValue" Type="int" Nullable="true" />
+    <Property Name="OrigEntryDate" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Meals">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AvgMealsPerDay" Type="tinyint" Nullable="false" />
+    <Property Name="AnyNonVegetarian" Type="bit" Nullable="false" />
+    <Property Name="MealTypes" Type="nvarchar" Nullable="true" MaxLength="80" />
+    <Property Name="FoodSourceTypes" Type="nvarchar" Nullable="false" MaxLength="80" />
+    <Property Name="MilkAsideAmount" Type="decimal" Nullable="true" Precision="4" Scale="1" />
+    <Property Name="CEGrains" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="CEPulse" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="CEVegetables" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="AvgNonVegPerMTypeId" Type="tinyint" Nullable="false" />
+    <Property Name="PKGPerMTypeId" Type="tinyint" Nullable="false" />
+    <Property Name="OrigEntryDate" Type="datetime" Nullable="true" />
+    <Property Name="Beneficiary_Id" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MealTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FoodSourceTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Logins">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LastLoginTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HAssetValues">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PartnerCompanyId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AssetTypeId" Type="smallint" Nullable="false" />
+    <Property Name="Value" Type="int" Nullable="false" />
+    <Property Name="OrigEntryDate" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="SchoolDistances">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Occupations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="States">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="Abbr" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="CountryId" Type="char" Nullable="false" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="Districts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="Abbr" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="StateId" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SchoolDaysPerWeek">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MajorExpenses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FoodM" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="RentM" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="SchoolFeesM" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="WaterAndElecM" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CableTvDishM" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="LoanRepaymentsM" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="AlcoholM" Type="smallint" Nullable="false" DefaultValue="0" />
+    <Property Name="CinemaFestivFunctA" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="LoomRelA" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="OtherExpM" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="OtherExpDescr" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OrigEntryDate" Type="datetime" Nullable="true" />
+    <Property Name="Beneficiary_Id" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HealthCareInfos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="HcProviders" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="HcFrequencyQ" Type="smallint" Nullable="true" />
+    <Property Name="HealthIssues" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="TreatmentCostsQ" Type="int" Nullable="true" />
+    <Property Name="MedSources" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OrigEntryDate" Type="datetime" Nullable="true" />
+    <Property Name="Beneficiary_Id" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HcProviderTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="HealthIssueTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="MedSourceTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="GovernmentServices">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="GovCards" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OtherCardDescr" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="RcvGovPension" Type="bit" Nullable="true" />
+    <Property Name="RcvPrivatePension" Type="bit" Nullable="true" />
+    <Property Name="GovServices" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OrigEntryDate" Type="datetime" Nullable="true" />
+    <Property Name="Beneficiary_Id" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GovCardTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="GovServiceTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="HousingInfoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="HasElectricity" Type="bit" Nullable="false" />
+    <Property Name="NumberOfRoomsTypeId" Type="tinyint" Nullable="false" />
+    <Property Name="RoofMaterialTypeId" Type="tinyint" Nullable="false" />
+    <Property Name="WaterSourceTypes" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="WallMaterialTypeId" Type="tinyint" Nullable="false" />
+    <Property Name="CookingEnergyTypeId" Type="tinyint" Nullable="false" />
+    <Property Name="ToiletTypeId" Type="tinyint" Nullable="false" />
+    <Property Name="HouseQualityTypeId" Type="tinyint" Nullable="false" />
+    <Property Name="ReligionId" Type="smallint" Nullable="false" />
+    <Property Name="CasteId" Type="smallint" Nullable="false" />
+    <Property Name="HouseOwnershipTypeId" Type="tinyint" Nullable="false" />
+    <Property Name="WaterSourceDistanceTypeId" Type="tinyint" Nullable="false" />
+    <Property Name="SavingsTypes" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LoanPurposeTypes" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OrigEntryDate" Type="datetime" Nullable="true" />
+    <Property Name="Beneficiary_Id" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NumberOfRoomsTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="RoofMaterialTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="WallMaterialTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="WaterSourceTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ToiletTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CookingEnergyTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HouseQualityTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WaterSourceDistanceTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HouseOwnershipTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SavingsTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LoanPurposeTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GrainTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PulseTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VegetableTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PKG_M_Type">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HistoryRecs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RefId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Type" Type="tinyint" Nullable="false" />
+    <Property Name="TimeStamp" Type="datetime" Nullable="false" />
+    <Property Name="User" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Value" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Created" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AvgNonVegPerMTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PKGPerMTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WhyNotInSchoolTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="TownCountry">
+    <End Role="Town" Type="DataModel.Store.Towns" Multiplicity="*" />
+    <End Role="Country" Type="DataModel.Store.Countries" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Town">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="BeneficiaryGender">
+    <End Role="Beneficiary" Type="DataModel.Store.Beneficiaries" Multiplicity="*" />
+    <End Role="Gender" Type="DataModel.Store.Genders" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Gender">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Beneficiary">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ReligionBeneficiary">
+    <End Role="Religion" Type="DataModel.Store.Religions" Multiplicity="1" />
+    <End Role="Beneficiary" Type="DataModel.Store.Beneficiaries" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Religion">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Beneficiary">
+        <PropertyRef Name="ReligionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TownBeneficiary">
+    <End Role="Town" Type="DataModel.Store.Towns" Multiplicity="1" />
+    <End Role="Beneficiary" Type="DataModel.Store.Beneficiaries" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Town">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Beneficiary">
+        <PropertyRef Name="TownId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EducationLevelBeneficiary">
+    <End Role="EducationLevel" Type="DataModel.Store.EducationLevels" Multiplicity="1" />
+    <End Role="Beneficiary" Type="DataModel.Store.Beneficiaries" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EducationLevel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Beneficiary">
+        <PropertyRef Name="EducationLevelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="GenderAdult">
+    <End Role="Gender" Type="DataModel.Store.Genders" Multiplicity="1" />
+    <End Role="Adult" Type="DataModel.Store.Adults" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gender">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Adult">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EducationLevelAdult">
+    <End Role="EducationLevel" Type="DataModel.Store.EducationLevels" Multiplicity="1" />
+    <End Role="Adult" Type="DataModel.Store.Adults" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EducationLevel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Adult">
+        <PropertyRef Name="EducationLevelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="BeneficiaryAdult">
+    <End Role="Beneficiary" Type="DataModel.Store.Beneficiaries" Multiplicity="1" />
+    <End Role="Adult" Type="DataModel.Store.Adults" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Beneficiary">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Adult">
+        <PropertyRef Name="BeneficiaryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="GenderChild">
+    <End Role="Gender" Type="DataModel.Store.Genders" Multiplicity="1" />
+    <End Role="Child" Type="DataModel.Store.Children" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gender">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Child">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ChildBeneficiary">
+    <End Role="Child" Type="DataModel.Store.Children" Multiplicity="*" />
+    <End Role="Beneficiary" Type="DataModel.Store.Beneficiaries" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Beneficiary">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Child">
+        <PropertyRef Name="BeneficiaryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SchoolTypeChild">
+    <End Role="SchoolType" Type="DataModel.Store.SchoolTypes" Multiplicity="0..1" />
+    <End Role="Child" Type="DataModel.Store.Children" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Child">
+        <PropertyRef Name="SchoolTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ClassLevelChild">
+    <End Role="ClassLevel" Type="DataModel.Store.ClassLevels" Multiplicity="0..1" />
+    <End Role="Child" Type="DataModel.Store.Children" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClassLevel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Child">
+        <PropertyRef Name="ClassLevelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="GenderPartnerStaffMember">
+    <End Role="Gender" Type="DataModel.Store.Genders" Multiplicity="1" />
+    <End Role="PartnerStaffMember" Type="DataModel.Store.PartnerStaffMembers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gender">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnerStaffMember">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="StaffTypePartnerStaffMember">
+    <End Role="StaffType" Type="DataModel.Store.StaffTypes" Multiplicity="1" />
+    <End Role="PartnerStaffMember" Type="DataModel.Store.PartnerStaffMembers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StaffType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnerStaffMember">
+        <PropertyRef Name="StaffTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LanguageBeneficiary">
+    <End Role="Language" Type="DataModel.Store.Languages" Multiplicity="1" />
+    <End Role="Beneficiary" Type="DataModel.Store.Beneficiaries" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Language">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Beneficiary">
+        <PropertyRef Name="LanguageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CasteBeneficiary">
+    <End Role="Caste" Type="DataModel.Store.Castes" Multiplicity="1" />
+    <End Role="Beneficiary" Type="DataModel.Store.Beneficiaries" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Caste">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Beneficiary">
+        <PropertyRef Name="CasteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PartnerCompanyPartnerStaffMember">
+    <End Role="PartnerCompany" Type="DataModel.Store.PartnerCompanies" Multiplicity="1" />
+    <End Role="PartnerStaffMember" Type="DataModel.Store.PartnerStaffMembers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PartnerCompany">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnerStaffMember">
+        <PropertyRef Name="PartnerCompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PartnerCompanyPartnerAdmin">
+    <End Role="PartnerCompany" Type="DataModel.Store.PartnerCompanies" Multiplicity="1" />
+    <End Role="PartnerAdmin" Type="DataModel.Store.PartnerAdmins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PartnerCompany">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnerAdmin">
+        <PropertyRef Name="PartnerCompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HouseholdAsset2AssetType">
+    <End Role="HouseholdAsset" Type="DataModel.Store.HouseholdAssets" Multiplicity="*" />
+    <End Role="AssetType" Type="DataModel.Store.AssetTypes" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="AssetType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HouseholdAsset">
+        <PropertyRef Name="AssetTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Beneficiary2HouseholdAsset">
+    <End Role="Beneficiary" Type="DataModel.Store.Beneficiaries" Multiplicity="1" />
+    <End Role="HouseholdAsset" Type="DataModel.Store.HouseholdAssets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Beneficiary">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HouseholdAsset">
+        <PropertyRef Name="BeneficiaryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Child2ChildRelationship">
+    <End Role="Child" Type="DataModel.Store.Children" Multiplicity="*" />
+    <End Role="ChildRelationship" Type="DataModel.Store.ChildRelationships" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="ChildRelationship">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Child">
+        <PropertyRef Name="ChildRelationshipId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Adult2AdultRelationship">
+    <End Role="Adult" Type="DataModel.Store.Adults" Multiplicity="*" />
+    <End Role="AdultRelationship" Type="DataModel.Store.AdultRelationships" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="AdultRelationship">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Adult">
+        <PropertyRef Name="AdultRelationshipId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Beneficiary2Meals">
+    <End Role="Beneficiary" Type="DataModel.Store.Beneficiaries" Multiplicity="1" />
+    <End Role="Meals" Type="DataModel.Store.Meals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Beneficiary">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Meals">
+        <PropertyRef Name="Beneficiary_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HAssetValue2AssetType">
+    <End Role="HAssetValue" Type="DataModel.Store.HAssetValues" Multiplicity="*" />
+    <End Role="AssetType" Type="DataModel.Store.AssetTypes" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="AssetType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HAssetValue">
+        <PropertyRef Name="AssetTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PartnerCompany2HAssetValue">
+    <End Role="PartnerCompany" Type="DataModel.Store.PartnerCompanies" Multiplicity="1" />
+    <End Role="HAssetValue" Type="DataModel.Store.HAssetValues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PartnerCompany">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HAssetValue">
+        <PropertyRef Name="PartnerCompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Child2SchoolDistance">
+    <End Role="Child" Type="DataModel.Store.Children" Multiplicity="*" />
+    <End Role="SchoolDistance" Type="DataModel.Store.SchoolDistances" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolDistance">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Child">
+        <PropertyRef Name="SchoolDistanceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="State2Country">
+    <End Role="State" Type="DataModel.Store.States" Multiplicity="*" />
+    <End Role="Country" Type="DataModel.Store.Countries" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="State">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="District2State">
+    <End Role="District" Type="DataModel.Store.Districts" Multiplicity="*" />
+    <End Role="State" Type="DataModel.Store.States" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="State">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="District">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Town2State">
+    <End Role="Town" Type="DataModel.Store.Towns" Multiplicity="*" />
+    <End Role="State" Type="DataModel.Store.States" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="State">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Town">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Town2District">
+    <End Role="Town" Type="DataModel.Store.Towns" Multiplicity="*" />
+    <End Role="District" Type="DataModel.Store.Districts" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Town">
+        <PropertyRef Name="DistrictId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SchoolDaysPerWeek2Child">
+    <End Role="SchoolDayPerWeek" Type="DataModel.Store.SchoolDaysPerWeek" Multiplicity="0..1" />
+    <End Role="Child" Type="DataModel.Store.Children" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolDayPerWeek">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Child">
+        <PropertyRef Name="SchoolAttendance" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Beneficiary2MajorExpenses">
+    <End Role="Beneficiary" Type="DataModel.Store.Beneficiaries" Multiplicity="1" />
+    <End Role="MajorExpensesInfo" Type="DataModel.Store.MajorExpenses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Beneficiary">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MajorExpensesInfo">
+        <PropertyRef Name="Beneficiary_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Beneficiary2HealthCareInfo">
+    <End Role="Beneficiary" Type="DataModel.Store.Beneficiaries" Multiplicity="1" />
+    <End Role="HealthCareInfo" Type="DataModel.Store.HealthCareInfos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Beneficiary">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HealthCareInfo">
+        <PropertyRef Name="Beneficiary_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Beneficiary2GovernmentServices">
+    <End Role="Beneficiary" Type="DataModel.Store.Beneficiaries" Multiplicity="1" />
+    <End Role="GovernmentServicesInfo" Type="DataModel.Store.GovernmentServices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Beneficiary">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GovernmentServicesInfo">
+        <PropertyRef Name="Beneficiary_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HousingInfo2NumberOfRooms">
+    <End Role="HousingInfo" Type="DataModel.Store.HousingInfoes" Multiplicity="*" />
+    <End Role="NumberOfRoomsType" Type="DataModel.Store.NumberOfRoomsTypes" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="NumberOfRoomsType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HousingInfo">
+        <PropertyRef Name="NumberOfRoomsTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HousingInfo2RoofMaterial">
+    <End Role="HousingInfo" Type="DataModel.Store.HousingInfoes" Multiplicity="*" />
+    <End Role="RoofMaterialType" Type="DataModel.Store.RoofMaterialTypes" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="RoofMaterialType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HousingInfo">
+        <PropertyRef Name="RoofMaterialTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HousingInfo2WallMaterial">
+    <End Role="HousingInfo" Type="DataModel.Store.HousingInfoes" Multiplicity="*" />
+    <End Role="WallMaterialType" Type="DataModel.Store.WallMaterialTypes" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="WallMaterialType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HousingInfo">
+        <PropertyRef Name="WallMaterialTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HousingInfo2CookingEnergyType">
+    <End Role="HousingInfo" Type="DataModel.Store.HousingInfoes" Multiplicity="*" />
+    <End Role="CookingEnergyType" Type="DataModel.Store.CookingEnergyTypes" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="CookingEnergyType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HousingInfo">
+        <PropertyRef Name="CookingEnergyTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Beneficiary2HousingInfo">
+    <End Role="Beneficiary" Type="DataModel.Store.Beneficiaries" Multiplicity="1" />
+    <End Role="HousingInfo" Type="DataModel.Store.HousingInfoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Beneficiary">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HousingInfo">
+        <PropertyRef Name="Beneficiary_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HousingInfo2ToiletType">
+    <End Role="HousingInfo" Type="DataModel.Store.HousingInfoes" Multiplicity="*" />
+    <End Role="ToiletType" Type="DataModel.Store.ToiletTypes" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="ToiletType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HousingInfo">
+        <PropertyRef Name="ToiletTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HousingInfoHouseQuality">
+    <End Role="HousingInfo" Type="DataModel.Store.HousingInfoes" Multiplicity="*" />
+    <End Role="HouseQuality" Type="DataModel.Store.HouseQualityTypes" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="HouseQuality">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HousingInfo">
+        <PropertyRef Name="HouseQualityTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Beneficiary2PriOccupation">
+    <End Role="Beneficiary" Type="DataModel.Store.Beneficiaries" Multiplicity="*" />
+    <End Role="Occupation" Type="DataModel.Store.Occupations" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Occupation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Beneficiary">
+        <PropertyRef Name="PrimaryOccupationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Beneficiary2SecOccupation">
+    <End Role="Beneficiary" Type="DataModel.Store.Beneficiaries" Multiplicity="*" />
+    <End Role="Occupation" Type="DataModel.Store.Occupations" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Occupation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Beneficiary">
+        <PropertyRef Name="SecondaryOccupationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Religion2HousingInfo">
+    <End Role="Religion" Type="DataModel.Store.Religions" Multiplicity="1" />
+    <End Role="HousingInfo" Type="DataModel.Store.HousingInfoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Religion">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HousingInfo">
+        <PropertyRef Name="ReligionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Caste2HousingInfo">
+    <End Role="Caste" Type="DataModel.Store.Castes" Multiplicity="1" />
+    <End Role="HousingInfo" Type="DataModel.Store.HousingInfoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Caste">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HousingInfo">
+        <PropertyRef Name="CasteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HouseOwnershipType2HousingInfo">
+    <End Role="HouseOwnershipType" Type="DataModel.Store.HouseOwnershipTypes" Multiplicity="1" />
+    <End Role="HousingInfo" Type="DataModel.Store.HousingInfoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HouseOwnershipType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HousingInfo">
+        <PropertyRef Name="HouseOwnershipTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="WaterSourceDistanceType2HousingInfo">
+    <End Role="WaterSourceDistanceType" Type="DataModel.Store.WaterSourceDistanceTypes" Multiplicity="1" />
+    <End Role="HousingInfo" Type="DataModel.Store.HousingInfoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WaterSourceDistanceType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HousingInfo">
+        <PropertyRef Name="WaterSourceDistanceTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AvgNonVegPerMType2Meals">
+    <End Role="AvgNonVegPerMType" Type="DataModel.Store.AvgNonVegPerMTypes" Multiplicity="1" />
+    <End Role="Meals" Type="DataModel.Store.Meals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AvgNonVegPerMType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Meals">
+        <PropertyRef Name="AvgNonVegPerMTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PKGPerMType2Meals">
+    <End Role="PKGPerMType" Type="DataModel.Store.PKGPerMTypes" Multiplicity="1" />
+    <End Role="Meals" Type="DataModel.Store.Meals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PKGPerMType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Meals">
+        <PropertyRef Name="PKGPerMTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PrimaryOccupation2Adult">
+    <End Role="Occupation" Type="DataModel.Store.Occupations" Multiplicity="1" />
+    <End Role="Adult" Type="DataModel.Store.Adults" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Occupation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Adult">
+        <PropertyRef Name="PrimaryOccupationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SecondaryOccupation2Adult">
+    <End Role="Occupation" Type="DataModel.Store.Occupations" Multiplicity="1" />
+    <End Role="Adult" Type="DataModel.Store.Adults" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Occupation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Adult">
+        <PropertyRef Name="SecondaryOccupationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="DataModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="PartnerCompanies" EntityType="DataModel.PartnerCompany" />
+          <EntitySet Name="Towns" EntityType="DataModel.Town" />
+          <EntitySet Name="Countries" EntityType="DataModel.Country" />
+          <AssociationSet Name="TownCountry" Association="DataModel.TownCountry">
+            <End Role="Town" EntitySet="Towns" />
+            <End Role="Country" EntitySet="Countries" />
+          </AssociationSet>
+          <EntitySet Name="Beneficiaries" EntityType="DataModel.Beneficiary" />
+          <EntitySet Name="Genders" EntityType="DataModel.Gender" />
+          <AssociationSet Name="BeneficiaryGender" Association="DataModel.BeneficiaryGender">
+            <End Role="Beneficiary" EntitySet="Beneficiaries" />
+            <End Role="Gender" EntitySet="Genders" />
+          </AssociationSet>
+          <EntitySet Name="Religions" EntityType="DataModel.Religion" />
+          <EntitySet Name="Castes" EntityType="DataModel.Caste" />
+          <AssociationSet Name="ReligionBeneficiary" Association="DataModel.ReligionBeneficiary">
+            <End Role="Religion" EntitySet="Religions" />
+            <End Role="Beneficiary" EntitySet="Beneficiaries" />
+          </AssociationSet>
+          <AssociationSet Name="TownBeneficiary" Association="DataModel.TownBeneficiary">
+            <End Role="Town" EntitySet="Towns" />
+            <End Role="Beneficiary" EntitySet="Beneficiaries" />
+          </AssociationSet>
+          <EntitySet Name="Disabilities" EntityType="DataModel.Disability" />
+          <EntitySet Name="EducationLevels" EntityType="DataModel.EducationLevel" />
+          <AssociationSet Name="EducationLevelBeneficiary" Association="DataModel.EducationLevelBeneficiary">
+            <End Role="EducationLevel" EntitySet="EducationLevels" />
+            <End Role="Beneficiary" EntitySet="Beneficiaries" />
+          </AssociationSet>
+          <EntitySet Name="Adults" EntityType="DataModel.Adult" />
+          <AssociationSet Name="GenderAdult" Association="DataModel.GenderAdult">
+            <End Role="Gender" EntitySet="Genders" />
+            <End Role="Adult" EntitySet="Adults" />
+          </AssociationSet>
+          <AssociationSet Name="EducationLevelAdult" Association="DataModel.EducationLevelAdult">
+            <End Role="EducationLevel" EntitySet="EducationLevels" />
+            <End Role="Adult" EntitySet="Adults" />
+          </AssociationSet>
+          <EntitySet Name="AdultRelationships" EntityType="DataModel.AdultRelationship" />
+          <AssociationSet Name="BeneficiaryAdult" Association="DataModel.BeneficiaryAdult">
+            <End Role="Beneficiary" EntitySet="Beneficiaries" />
+            <End Role="Adult" EntitySet="Adults" />
+          </AssociationSet>
+          <EntitySet Name="Children" EntityType="DataModel.Child" />
+          <EntitySet Name="ChildRelationships" EntityType="DataModel.ChildRelationship" />
+          <AssociationSet Name="GenderChild" Association="DataModel.GenderChild">
+            <End Role="Gender" EntitySet="Genders" />
+            <End Role="Child" EntitySet="Children" />
+          </AssociationSet>
+          <AssociationSet Name="ChildBeneficiary" Association="DataModel.ChildBeneficiary">
+            <End Role="Child" EntitySet="Children" />
+            <End Role="Beneficiary" EntitySet="Beneficiaries" />
+          </AssociationSet>
+          <EntitySet Name="SchoolTypes" EntityType="DataModel.SchoolType" />
+          <AssociationSet Name="SchoolTypeChild" Association="DataModel.SchoolTypeChild">
+            <End Role="SchoolType" EntitySet="SchoolTypes" />
+            <End Role="Child" EntitySet="Children" />
+          </AssociationSet>
+          <EntitySet Name="ClassLevels" EntityType="DataModel.ClassLevel" />
+          <AssociationSet Name="ClassLevelChild" Association="DataModel.ClassLevelChild">
+            <End Role="ClassLevel" EntitySet="ClassLevels" />
+            <End Role="Child" EntitySet="Children" />
+          </AssociationSet>
+          <EntitySet Name="PartnerStaffMembers" EntityType="DataModel.PartnerStaffMember" />
+          <EntitySet Name="StaffTypes" EntityType="DataModel.StaffType" />
+          <AssociationSet Name="GenderPartnerStaffMember" Association="DataModel.GenderPartnerStaffMember">
+            <End Role="Gender" EntitySet="Genders" />
+            <End Role="PartnerStaffMember" EntitySet="PartnerStaffMembers" />
+          </AssociationSet>
+          <AssociationSet Name="StaffTypePartnerStaffMember" Association="DataModel.StaffTypePartnerStaffMember">
+            <End Role="StaffType" EntitySet="StaffTypes" />
+            <End Role="PartnerStaffMember" EntitySet="PartnerStaffMembers" />
+          </AssociationSet>
+          <EntitySet Name="Languages" EntityType="DataModel.Language" />
+          <AssociationSet Name="LanguageBeneficiary" Association="DataModel.LanguageBeneficiary">
+            <End Role="Language" EntitySet="Languages" />
+            <End Role="Beneficiary" EntitySet="Beneficiaries" />
+          </AssociationSet>
+          <AssociationSet Name="CasteBeneficiary" Association="DataModel.CasteBeneficiary">
+            <End Role="Caste" EntitySet="Castes" />
+            <End Role="Beneficiary" EntitySet="Beneficiaries" />
+          </AssociationSet>
+          <AssociationSet Name="PartnerCompanyPartnerStaffMember" Association="DataModel.PartnerCompanyPartnerStaffMember">
+            <End Role="PartnerCompany" EntitySet="PartnerCompanies" />
+            <End Role="PartnerStaffMember" EntitySet="PartnerStaffMembers" />
+          </AssociationSet>
+          <EntitySet Name="PartnerAdmins" EntityType="DataModel.PartnerAdmin" />
+          <AssociationSet Name="PartnerCompanyPartnerAdmin" Association="DataModel.PartnerCompanyPartnerAdmin">
+            <End Role="PartnerCompany" EntitySet="PartnerCompanies" />
+            <End Role="PartnerAdmin" EntitySet="PartnerAdmins" />
+          </AssociationSet>
+          <EntitySet Name="AssetTypes" EntityType="DataModel.AssetType" />
+          <EntitySet Name="HouseholdAssets" EntityType="DataModel.HouseholdAsset" />
+          <AssociationSet Name="HouseholdAsset2AssetType" Association="DataModel.HouseholdAsset2AssetType">
+            <End Role="HouseholdAsset" EntitySet="HouseholdAssets" />
+            <End Role="AssetType" EntitySet="AssetTypes" />
+          </AssociationSet>
+          <AssociationSet Name="Beneficiary2HouseholdAsset" Association="DataModel.Beneficiary2HouseholdAsset">
+            <End Role="Beneficiary" EntitySet="Beneficiaries" />
+            <End Role="HouseholdAsset" EntitySet="HouseholdAssets" />
+          </AssociationSet>
+          <AssociationSet Name="Child2ChildRelationship" Association="DataModel.Child2ChildRelationship">
+            <End Role="Child" EntitySet="Children" />
+            <End Role="ChildRelationship" EntitySet="ChildRelationships" />
+          </AssociationSet>
+          <AssociationSet Name="Adult2AdultRelationship" Association="DataModel.Adult2AdultRelationship">
+            <End Role="Adult" EntitySet="Adults" />
+            <End Role="AdultRelationship" EntitySet="AdultRelationships" />
+          </AssociationSet>
+          <EntitySet Name="Meals" EntityType="DataModel.Meals" />
+          <AssociationSet Name="Beneficiary2Meals" Association="DataModel.Beneficiary2Meals">
+            <End Role="Beneficiary" EntitySet="Beneficiaries" />
+            <End Role="Meals" EntitySet="Meals" />
+          </AssociationSet>
+          <EntitySet Name="MealTypes" EntityType="DataModel.MealType" />
+          <EntitySet Name="FoodSourceTypes" EntityType="DataModel.FoodSourceType" />
+          <EntitySet Name="Logins" EntityType="DataModel.Logins" />
+          <EntitySet Name="HAssetValues" EntityType="DataModel.HAssetValue" />
+          <AssociationSet Name="HAssetValueAssetType" Association="DataModel.HAssetValue2AssetType">
+            <End Role="HAssetValue" EntitySet="HAssetValues" />
+            <End Role="AssetType" EntitySet="AssetTypes" />
+          </AssociationSet>
+          <AssociationSet Name="PartnerCompany2HAssetValue" Association="DataModel.PartnerCompany2HAssetValue">
+            <End Role="PartnerCompany" EntitySet="PartnerCompanies" />
+            <End Role="HAssetValue" EntitySet="HAssetValues" />
+          </AssociationSet>
+          <EntitySet Name="SchoolDistances" EntityType="DataModel.SchoolDistance" />
+          <AssociationSet Name="Child2SchoolDistance" Association="DataModel.Child2SchoolDistance">
+            <End Role="Child" EntitySet="Children" />
+            <End Role="SchoolDistance" EntitySet="SchoolDistances" />
+          </AssociationSet>
+          <EntitySet Name="Occupations" EntityType="DataModel.Occupation" />
+          <EntitySet Name="States" EntityType="DataModel.State" />
+          <AssociationSet Name="State2Country" Association="DataModel.State2Country">
+            <End Role="State" EntitySet="States" />
+            <End Role="Country" EntitySet="Countries" />
+          </AssociationSet>
+          <EntitySet Name="Districts" EntityType="DataModel.District" />
+          <AssociationSet Name="DistrictState" Association="DataModel.District2State">
+            <End Role="District" EntitySet="Districts" />
+            <End Role="State" EntitySet="States" />
+          </AssociationSet>
+          <AssociationSet Name="Town2State" Association="DataModel.Town2State">
+            <End Role="Town" EntitySet="Towns" />
+            <End Role="State" EntitySet="States" />
+          </AssociationSet>
+          <AssociationSet Name="Town2District" Association="DataModel.Town2District">
+            <End Role="Town" EntitySet="Towns" />
+            <End Role="District" EntitySet="Districts" />
+          </AssociationSet>
+          <EntitySet Name="SchoolDaysPerWeek" EntityType="DataModel.SchoolDayPerWeek" />
+          <AssociationSet Name="SchoolDaysPerWeek2Child" Association="DataModel.SchoolDaysPerWeek2Child">
+            <End Role="SchoolDayPerWeek" EntitySet="SchoolDaysPerWeek" />
+            <End Role="Child" EntitySet="Children" />
+          </AssociationSet>
+          <EntitySet Name="MajorExpenses" EntityType="DataModel.MajorExpensesInfo" />
+          <AssociationSet Name="Beneficiary2MajorExpenses" Association="DataModel.Beneficiary2MajorExpenses">
+            <End Role="Beneficiary" EntitySet="Beneficiaries" />
+            <End Role="MajorExpensesInfo" EntitySet="MajorExpenses" />
+          </AssociationSet>
+          <EntitySet Name="HealthCareInfos" EntityType="DataModel.HealthCareInfo" />
+          <AssociationSet Name="Beneficiary2HealthCareInfo" Association="DataModel.Beneficiary2HealthCareInfo">
+            <End Role="Beneficiary" EntitySet="Beneficiaries" />
+            <End Role="HealthCareInfo" EntitySet="HealthCareInfos" />
+          </AssociationSet>
+          <EntitySet Name="HcProviderTypes" EntityType="DataModel.HcProviderType" />
+          <EntitySet Name="HealthIssueTypes" EntityType="DataModel.HealthIssueType" />
+          <EntitySet Name="MedSourceTypes" EntityType="DataModel.MedSourceType" />
+          <EntitySet Name="GovernmentServices" EntityType="DataModel.GovernmentServicesInfo" />
+          <EntitySet Name="GovCardTypes" EntityType="DataModel.GovCardType" />
+          <EntitySet Name="GovServiceTypes" EntityType="DataModel.GovServiceType" />
+          <AssociationSet Name="Beneficiary2GovernmentServices" Association="DataModel.Beneficiary2GovernmentServices">
+            <End Role="Beneficiary" EntitySet="Beneficiaries" />
+            <End Role="GovernmentServicesInfo" EntitySet="GovernmentServices" />
+          </AssociationSet>
+          <EntitySet Name="HousingInfoes" EntityType="DataModel.HousingInfo" />
+          <EntitySet Name="NumberOfRoomsTypes" EntityType="DataModel.NumberOfRoomsType" />
+          <EntitySet Name="RoofMaterialTypes" EntityType="DataModel.RoofMaterialType" />
+          <EntitySet Name="WallMaterialTypes" EntityType="DataModel.WallMaterialType" />
+          <EntitySet Name="WaterSourceTypes" EntityType="DataModel.WaterSourceType" />
+          <EntitySet Name="ToiletTypes" EntityType="DataModel.ToiletType" />
+          <EntitySet Name="CookingEnergyTypes" EntityType="DataModel.CookingEnergyType" />
+          <AssociationSet Name="HousingInfo2NumberOfRooms" Association="DataModel.HousingInfo2NumberOfRooms">
+            <End Role="HousingInfo" EntitySet="HousingInfoes" />
+            <End Role="NumberOfRoomsType" EntitySet="NumberOfRoomsTypes" />
+          </AssociationSet>
+          <AssociationSet Name="HousingInfo2RoofMaterial" Association="DataModel.HousingInfo2RoofMaterial">
+            <End Role="HousingInfo" EntitySet="HousingInfoes" />
+            <End Role="RoofMaterialType" EntitySet="RoofMaterialTypes" />
+          </AssociationSet>
+          <AssociationSet Name="HousingInfo2WallMaterial" Association="DataModel.HousingInfo2WallMaterial">
+            <End Role="HousingInfo" EntitySet="HousingInfoes" />
+            <End Role="WallMaterialType" EntitySet="WallMaterialTypes" />
+          </AssociationSet>
+          <AssociationSet Name="HousingInfo2CookingEnergyType" Association="DataModel.HousingInfo2CookingEnergyType">
+            <End Role="HousingInfo" EntitySet="HousingInfoes" />
+            <End Role="CookingEnergyType" EntitySet="CookingEnergyTypes" />
+          </AssociationSet>
+          <AssociationSet Name="Beneficiary2HousingInfo" Association="DataModel.Beneficiary2HousingInfo">
+            <End Role="Beneficiary" EntitySet="Beneficiaries" />
+            <End Role="HousingInfo" EntitySet="HousingInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="HousingInfo2ToiletType" Association="DataModel.HousingInfo2ToiletType">
+            <End Role="HousingInfo" EntitySet="HousingInfoes" />
+            <End Role="ToiletType" EntitySet="ToiletTypes" />
+          </AssociationSet>
+          <EntitySet Name="HouseQualityTypes" EntityType="DataModel.HouseQualityType" />
+          <AssociationSet Name="HousingInfoHouseQuality" Association="DataModel.HousingInfoHouseQuality">
+            <End Role="HousingInfo" EntitySet="HousingInfoes" />
+            <End Role="HouseQuality" EntitySet="HouseQualityTypes" />
+          </AssociationSet>
+          <AssociationSet Name="Beneficiary2PriOccupation" Association="DataModel.Beneficiary2PriOccupation">
+            <End Role="Beneficiary" EntitySet="Beneficiaries" />
+            <End Role="Occupation" EntitySet="Occupations" />
+          </AssociationSet>
+          <AssociationSet Name="Beneficiary2SecOccupation" Association="DataModel.Beneficiary2SecOccupation">
+            <End Role="Beneficiary" EntitySet="Beneficiaries" />
+            <End Role="Occupation" EntitySet="Occupations" />
+          </AssociationSet>
+          <AssociationSet Name="Religion2HousingInfo" Association="DataModel.Religion2HousingInfo">
+            <End Role="Religion" EntitySet="Religions" />
+            <End Role="HousingInfo" EntitySet="HousingInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="Caste2HousingInfo" Association="DataModel.Caste2HousingInfo">
+            <End Role="Caste" EntitySet="Castes" />
+            <End Role="HousingInfo" EntitySet="HousingInfoes" />
+          </AssociationSet>
+          <EntitySet Name="WaterSourceDistanceTypes" EntityType="DataModel.WaterSourceDistanceType" />
+          <EntitySet Name="HouseOwnershipTypes" EntityType="DataModel.HouseOwnershipType" />
+          <AssociationSet Name="HouseOwnershipType2HousingInfo" Association="DataModel.HouseOwnershipType2HousingInfo">
+            <End Role="HouseOwnershipType" EntitySet="HouseOwnershipTypes" />
+            <End Role="HousingInfo" EntitySet="HousingInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="WaterSourceDistanceType2HousingInfo" Association="DataModel.WaterSourceDistanceType2HousingInfo">
+            <End Role="WaterSourceDistanceType" EntitySet="WaterSourceDistanceTypes" />
+            <End Role="HousingInfo" EntitySet="HousingInfoes" />
+          </AssociationSet>
+          <EntitySet Name="SavingsTypes" EntityType="DataModel.SavingsType" />
+          <EntitySet Name="LoanPurposeTypes" EntityType="DataModel.LoanPurposeType" />
+          <EntitySet Name="GrainTypes" EntityType="DataModel.GrainType" />
+          <EntitySet Name="PulseTypes" EntityType="DataModel.PulseType" />
+          <EntitySet Name="VegetableTypes" EntityType="DataModel.VegetableType" />
+          <EntitySet Name="PKG_M_Type" EntityType="DataModel.PKG_M_Type" />
+          <EntitySet Name="HistoryRecs" EntityType="DataModel.HistoryRec" />
+          <EntitySet Name="AvgNonVegPerMTypes" EntityType="DataModel.AvgNonVegPerMType" />
+          <AssociationSet Name="AvgNonVegPerMType2Meals" Association="DataModel.AvgNonVegPerMType2Meals">
+            <End Role="AvgNonVegPerMType" EntitySet="AvgNonVegPerMTypes" />
+            <End Role="Meals" EntitySet="Meals" />
+          </AssociationSet>
+          <EntitySet Name="PKGPerMTypes" EntityType="DataModel.PKGPerMType" />
+          <AssociationSet Name="PKGPerMType2Meals" Association="DataModel.PKGPerMType2Meals">
+            <End Role="PKGPerMType" EntitySet="PKGPerMTypes" />
+            <End Role="Meals" EntitySet="Meals" />
+          </AssociationSet>
+          <AssociationSet Name="PrimaryOccupation2Adult" Association="DataModel.PrimaryOccupation2Adult">
+            <End Role="Occupation" EntitySet="Occupations" />
+            <End Role="Adult" EntitySet="Adults" />
+          </AssociationSet>
+          <AssociationSet Name="SecondaryOccupation2Adult" Association="DataModel.SecondaryOccupation2Adult">
+            <End Role="Occupation" EntitySet="Occupations" />
+            <End Role="Adult" EntitySet="Adults" />
+          </AssociationSet>
+          <EntitySet Name="WhyNotInSchoolTypes" EntityType="DataModel.WhyNotInSchoolType" />
+        </EntityContainer>
+        <EntityType Name="PartnerCompany">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="Name" Type="String" Nullable="false" Unicode="true" FixedLength="false" MaxLength="80" />
+          <Property Name="Phone" Type="String" Nullable="true" Unicode="false" FixedLength="false" MaxLength="20" />
+          <Property Name="Fax" Type="String" Nullable="true" Unicode="false" FixedLength="false" MaxLength="20" />
+          <Property Name="Email" Type="String" Nullable="false" Unicode="true" FixedLength="false" MaxLength="50" />
+          <Property Name="StartDateDay" Type="Byte" Nullable="true" />
+          <Property Name="StartDateMonth" Type="Byte" Nullable="true" />
+          <Property Name="StartDateYear" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="PartnerStaffMembers" Relationship="DataModel.PartnerCompanyPartnerStaffMember" FromRole="PartnerCompany" ToRole="PartnerStaffMember" />
+          <NavigationProperty Name="PartnerAdmins" Relationship="DataModel.PartnerCompanyPartnerAdmin" FromRole="PartnerCompany" ToRole="PartnerAdmin" />
+          <Property Name="Status" Type="Byte" Nullable="true" />
+        </EntityType>
+        <EntityType Name="Town">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" Unicode="true" MaxLength="50" FixedLength="false" />
+          <NavigationProperty Name="Country" Relationship="DataModel.TownCountry" FromRole="Town" ToRole="Country" />
+          <Property Name="CountryId" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="StateId" Type="Int16" Nullable="false" />
+          <Property Name="DistrictId" Type="Int16" Nullable="false" />
+          <Property Name="PostalCode" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="State" Relationship="DataModel.Town2State" FromRole="Town" ToRole="State" />
+          <NavigationProperty Name="District" Relationship="DataModel.Town2District" FromRole="Town" ToRole="District" />
+        </EntityType>
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" annotation:StoreGeneratedPattern="None" FixedLength="true" MaxLength="2" Unicode="false" />
+          <Property Name="Name" Type="String" Nullable="false" FixedLength="false" MaxLength="50" Unicode="true" />
+          <NavigationProperty Name="Towns" Relationship="DataModel.TownCountry" FromRole="Country" ToRole="Town" />
+          <NavigationProperty Name="States" Relationship="DataModel.State2Country" FromRole="Country" ToRole="State" />
+        </EntityType>
+        <Association Name="TownCountry">
+          <End Type="DataModel.Town" Role="Town" Multiplicity="*" />
+          <End Type="DataModel.Country" Role="Country" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="Country">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Town">
+              <PropertyRef Name="CountryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Beneficiary">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="Name" Type="String" Nullable="false" Unicode="true" MaxLength="100" FixedLength="false" />
+          <NavigationProperty Name="Gender" Relationship="DataModel.BeneficiaryGender" FromRole="Beneficiary" ToRole="Gender" />
+          <Property Name="GenderId" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="Religion" Relationship="DataModel.ReligionBeneficiary" FromRole="Beneficiary" ToRole="Religion" />
+          <Property Name="ReligionId" Type="Int16" Nullable="false" DefaultValue="0" />
+          <NavigationProperty Name="Town" Relationship="DataModel.TownBeneficiary" FromRole="Beneficiary" ToRole="Town" />
+          <Property Name="TownId" Type="Int32" Nullable="false" />
+          <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Phone" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Disability" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="EducationLevel" Relationship="DataModel.EducationLevelBeneficiary" FromRole="Beneficiary" ToRole="EducationLevel" />
+          <Property Name="Disabilities" Type="String" Nullable="true" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="EducationLevelId" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="Adults" Relationship="DataModel.BeneficiaryAdult" FromRole="Beneficiary" ToRole="Adult" />
+          <NavigationProperty Name="Children" Relationship="DataModel.ChildBeneficiary" FromRole="Beneficiary" ToRole="Child" />
+          <Property Name="BirthDay" Type="Byte" Nullable="true" />
+          <Property Name="BirthMonth" Type="Byte" Nullable="true" />
+          <Property Name="BirthYear" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="Language" Relationship="DataModel.LanguageBeneficiary" FromRole="Beneficiary" ToRole="Language" />
+          <Property Name="LanguageId" Type="Int16" Nullable="false" DefaultValue="0" />
+          <NavigationProperty Name="Caste" Relationship="DataModel.CasteBeneficiary" FromRole="Beneficiary" ToRole="Caste" />
+          <Property Name="CasteId" Type="Int16" Nullable="false" DefaultValue="0" />
+          <NavigationProperty Name="HouseholdAssets" Relationship="DataModel.Beneficiary2HouseholdAsset" FromRole="Beneficiary" ToRole="HouseholdAsset" />
+          <NavigationProperty Name="Meals" Relationship="DataModel.Beneficiary2Meals" FromRole="Beneficiary" ToRole="Meals" />
+          <Property Name="UniqueId" Type="String" Nullable="false" MaxLength="10" />
+          <Property Name="Status" Type="Byte" Nullable="true" />
+          <NavigationProperty Name="MajorExpensesInfo" Relationship="DataModel.Beneficiary2MajorExpenses" FromRole="Beneficiary" ToRole="MajorExpensesInfo" />
+          <NavigationProperty Name="HealthCareInfo" Relationship="DataModel.Beneficiary2HealthCareInfo" FromRole="Beneficiary" ToRole="HealthCareInfo" />
+          <NavigationProperty Name="GovernmentServicesInfo" Relationship="DataModel.Beneficiary2GovernmentServices" FromRole="Beneficiary" ToRole="GovernmentServicesInfo" />
+          <NavigationProperty Name="HousingInfo" Relationship="DataModel.Beneficiary2HousingInfo" FromRole="Beneficiary" ToRole="HousingInfo" />
+          <Property Name="PhotoUrl" Type="String" Nullable="true" />
+          <Property Name="Block" Type="String" Nullable="true" MaxLength="60" />
+          <NavigationProperty Name="PrimaryOccupation" Relationship="DataModel.Beneficiary2PriOccupation" FromRole="Beneficiary" ToRole="Occupation" />
+          <Property Name="PrimaryOccupationId" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="SecondaryOccupation" Relationship="DataModel.Beneficiary2SecOccupation" FromRole="Beneficiary" ToRole="Occupation" />
+          <Property Name="SecondaryOccupationId" Type="Byte" Nullable="false" />
+          <Property Name="PrimaryWorkDaysM" Type="Byte" Nullable="true" />
+          <Property Name="SecondaryWorkDaysM" Type="Byte" Nullable="true" />
+          <Property Name="PrimaryDailyWage" Type="Int16" Nullable="true" />
+          <Property Name="SecondaryDailyWage" Type="Int16" Nullable="true" />
+          <Property Name="StartDateDay" Type="Byte" Nullable="true" />
+          <Property Name="StartDateMonth" Type="Byte" Nullable="true" />
+          <Property Name="StartDateYear" Type="Int16" Nullable="true" />
+          <Property Name="OrigEntryDate" Type="DateTime" Nullable="true" />
+          <Property Name="PCompanyId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Gender">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="BeneficiaryGender">
+          <End Type="DataModel.Beneficiary" Role="Beneficiary" Multiplicity="*" />
+          <End Type="DataModel.Gender" Role="Gender" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="Gender">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Beneficiary">
+              <PropertyRef Name="GenderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Religion">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Caste">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="ReligionBeneficiary">
+          <End Type="DataModel.Religion" Role="Religion" Multiplicity="1" />
+          <End Type="DataModel.Beneficiary" Role="Beneficiary" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Religion">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Beneficiary">
+              <PropertyRef Name="ReligionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TownBeneficiary">
+          <End Type="DataModel.Town" Role="Town" Multiplicity="1" />
+          <End Type="DataModel.Beneficiary" Role="Beneficiary" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Town">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Beneficiary">
+              <PropertyRef Name="TownId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Disability">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="EducationLevel">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="EducationLevelBeneficiary">
+          <End Type="DataModel.EducationLevel" Role="EducationLevel" Multiplicity="1" />
+          <End Type="DataModel.Beneficiary" Role="Beneficiary" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EducationLevel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Beneficiary">
+              <PropertyRef Name="EducationLevelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Adult">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Gender" Relationship="DataModel.GenderAdult" FromRole="Adult" ToRole="Gender" />
+          <Property Name="GenderId" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="EducationLevel" Relationship="DataModel.EducationLevelAdult" FromRole="Adult" ToRole="EducationLevel" />
+          <Property Name="EducationLevelId" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="Beneficiary" Relationship="DataModel.BeneficiaryAdult" FromRole="Adult" ToRole="Beneficiary" />
+          <Property Name="BeneficiaryId" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="AdultRelationship" Relationship="DataModel.Adult2AdultRelationship" FromRole="Adult" ToRole="AdultRelationship" />
+          <Property Name="AdultRelationshipId" Type="Byte" Nullable="false" />
+          <Property Name="Disability" Type="Boolean" Nullable="false" />
+          <Property Name="Disabilities" Type="String" Nullable="true" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="BirthDay" Type="Byte" Nullable="true" />
+          <Property Name="BirthMonth" Type="Byte" Nullable="true" />
+          <Property Name="BirthYear" Type="Int16" Nullable="false" />
+          <Property Name="Status" Type="Byte" Nullable="true" />
+          <Property Name="EmplSameCompany" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="PrimaryOccupation" Relationship="DataModel.PrimaryOccupation2Adult" FromRole="Adult" ToRole="Occupation" />
+          <Property Name="PrimaryOccupationId" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="SecondaryOccupation" Relationship="DataModel.SecondaryOccupation2Adult" FromRole="Adult" ToRole="Occupation" />
+          <Property Name="SecondaryOccupationId" Type="Byte" Nullable="false" />
+          <Property Name="PrimaryWorkDaysM" Type="Byte" Nullable="true" />
+          <Property Name="SecondaryWorkDaysM" Type="Byte" Nullable="true" />
+          <Property Name="PrimaryDailyWage" Type="Int16" Nullable="true" />
+          <Property Name="SecondaryDailyWage" Type="Int16" Nullable="true" />
+          <Property Name="OrigEntryDate" Type="DateTime" Nullable="true" />
+        </EntityType>
+        <Association Name="GenderAdult">
+          <End Type="DataModel.Gender" Role="Gender" Multiplicity="1" />
+          <End Type="DataModel.Adult" Role="Adult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gender">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Adult">
+              <PropertyRef Name="GenderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EducationLevelAdult">
+          <End Type="DataModel.EducationLevel" Role="EducationLevel" Multiplicity="1" />
+          <End Type="DataModel.Adult" Role="Adult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EducationLevel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Adult">
+              <PropertyRef Name="EducationLevelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="AdultRelationship">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="BeneficiaryAdult">
+          <End Type="DataModel.Beneficiary" Role="Beneficiary" Multiplicity="1" />
+          <End Type="DataModel.Adult" Role="Adult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Beneficiary">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Adult">
+              <PropertyRef Name="BeneficiaryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Child">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="BeneficiaryId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Gender" Relationship="DataModel.GenderChild" FromRole="Child" ToRole="Gender" />
+          <Property Name="GenderId" Type="Byte" Nullable="false" />
+          <Property Name="ChildRelationshipId" Type="Byte" Nullable="false" />
+          <Property Name="Disability" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Beneficiary" Relationship="DataModel.ChildBeneficiary" FromRole="Child" ToRole="Beneficiary" />
+          <Property Name="Disabilities" Type="String" Nullable="true" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="EnrolledInSchool" Type="Boolean" Nullable="false" />
+          <Property Name="WhyNotInSchool" Type="String" Nullable="true" />
+          <NavigationProperty Name="SchoolType" Relationship="DataModel.SchoolTypeChild" FromRole="Child" ToRole="SchoolType" />
+          <Property Name="SchoolTypeId" Type="Byte" Nullable="true" />
+          <NavigationProperty Name="ClassLevel" Relationship="DataModel.ClassLevelChild" FromRole="Child" ToRole="ClassLevel" />
+          <Property Name="SchoolDistanceId" Type="Byte" Nullable="true" />
+          <Property Name="ClassLevelId" Type="Byte" Nullable="true" />
+          <Property Name="MonthlyEduExpenses" Type="Double" Nullable="true" DefaultValue="0" />
+          <Property Name="BirthDay" Type="Byte" Nullable="true" />
+          <Property Name="BirthMonth" Type="Byte" Nullable="true" />
+          <Property Name="BirthYear" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="ChildRelationship" Relationship="DataModel.Child2ChildRelationship" FromRole="Child" ToRole="ChildRelationship" />
+          <Property Name="Status" Type="Byte" Nullable="true" />
+          <NavigationProperty Name="SchoolDistance" Relationship="DataModel.Child2SchoolDistance" FromRole="Child" ToRole="SchoolDistance" />
+          <NavigationProperty Name="SchoolDayPerWeek" Relationship="DataModel.SchoolDaysPerWeek2Child" FromRole="Child" ToRole="SchoolDayPerWeek" />
+          <Property Name="SchoolAttendance" Type="Byte" Nullable="true" />
+          <Property Name="OrigEntryDate" Type="DateTime" Nullable="true" />
+        </EntityType>
+        <EntityType Name="ChildRelationship">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="GenderChild">
+          <End Type="DataModel.Gender" Role="Gender" Multiplicity="1" />
+          <End Type="DataModel.Child" Role="Child" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gender">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Child">
+              <PropertyRef Name="GenderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ChildBeneficiary">
+          <End Type="DataModel.Child" Role="Child" Multiplicity="*" />
+          <End Type="DataModel.Beneficiary" Role="Beneficiary" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="Beneficiary">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Child">
+              <PropertyRef Name="BeneficiaryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SchoolType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="SchoolTypeChild">
+          <End Type="DataModel.SchoolType" Role="SchoolType" Multiplicity="0..1" />
+          <End Type="DataModel.Child" Role="Child" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SchoolType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Child">
+              <PropertyRef Name="SchoolTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ClassLevel">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="ClassLevelChild">
+          <End Type="DataModel.ClassLevel" Role="ClassLevel" Multiplicity="0..1" />
+          <End Type="DataModel.Child" Role="Child" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ClassLevel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Child">
+              <PropertyRef Name="ClassLevelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="PartnerStaffMember">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Gender" Relationship="DataModel.GenderPartnerStaffMember" FromRole="PartnerStaffMember" ToRole="Gender" />
+          <Property Name="GenderId" Type="Byte" Nullable="false" />
+          <Property Name="Address" Type="String" Nullable="false" Unicode="true" FixedLength="false" MaxLength="200" />
+          <Property Name="Phone" Type="String" Nullable="false" FixedLength="false" MaxLength="60" Unicode="true" />
+          <Property Name="Email" Type="String" Nullable="false" Unicode="true" FixedLength="false" MaxLength="60" />
+          <Property Name="Title" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="BirthDay" Type="Byte" Nullable="true" />
+          <Property Name="BirthMonth" Type="Byte" Nullable="true" />
+          <Property Name="BirthYear" Type="Int16" Nullable="false" />
+          <Property Name="StaffTypeId" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="StaffType" Relationship="DataModel.StaffTypePartnerStaffMember" FromRole="PartnerStaffMember" ToRole="StaffType" />
+          <Property Name="InternalPartnerEmployeeId" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="PartnerCompany" Relationship="DataModel.PartnerCompanyPartnerStaffMember" FromRole="PartnerStaffMember" ToRole="PartnerCompany" />
+          <Property Name="PartnerCompanyId" Type="Guid" Nullable="false" />
+          <Property Name="Status" Type="Byte" Nullable="true" />
+        </EntityType>
+        <EntityType Name="StaffType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" FixedLength="false" MaxLength="Max" Unicode="true" />
+        </EntityType>
+        <Association Name="GenderPartnerStaffMember">
+          <End Type="DataModel.Gender" Role="Gender" Multiplicity="1" />
+          <End Type="DataModel.PartnerStaffMember" Role="PartnerStaffMember" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gender">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PartnerStaffMember">
+              <PropertyRef Name="GenderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="StaffTypePartnerStaffMember">
+          <End Type="DataModel.StaffType" Role="StaffType" Multiplicity="1" />
+          <End Type="DataModel.PartnerStaffMember" Role="PartnerStaffMember" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StaffType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PartnerStaffMember">
+              <PropertyRef Name="StaffTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Language">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="LanguageBeneficiary">
+          <End Type="DataModel.Language" Role="Language" Multiplicity="1" />
+          <End Type="DataModel.Beneficiary" Role="Beneficiary" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Language">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Beneficiary">
+              <PropertyRef Name="LanguageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CasteBeneficiary">
+          <End Type="DataModel.Caste" Role="Caste" Multiplicity="1" />
+          <End Type="DataModel.Beneficiary" Role="Beneficiary" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Caste">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Beneficiary">
+              <PropertyRef Name="CasteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PartnerCompanyPartnerStaffMember">
+          <End Type="DataModel.PartnerCompany" Role="PartnerCompany" Multiplicity="1" />
+          <End Type="DataModel.PartnerStaffMember" Role="PartnerStaffMember" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PartnerCompany">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PartnerStaffMember">
+              <PropertyRef Name="PartnerCompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="PartnerAdmin">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <NavigationProperty Name="PartnerCompany" Relationship="DataModel.PartnerCompanyPartnerAdmin" FromRole="PartnerAdmin" ToRole="PartnerCompany" />
+          <Property Name="PartnerCompanyId" Type="Guid" Nullable="false" />
+          <Property Name="Status" Type="Byte" Nullable="true" />
+        </EntityType>
+        <Association Name="PartnerCompanyPartnerAdmin">
+          <End Type="DataModel.PartnerCompany" Role="PartnerCompany" Multiplicity="1" />
+          <End Type="DataModel.PartnerAdmin" Role="PartnerAdmin" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PartnerCompany">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PartnerAdmin">
+              <PropertyRef Name="PartnerCompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="AssetType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="HouseholdAsset">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="AssetType" Relationship="DataModel.HouseholdAsset2AssetType" FromRole="HouseholdAsset" ToRole="AssetType" />
+          <Property Name="AssetTypeId" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="Beneficiary" Relationship="DataModel.Beneficiary2HouseholdAsset" FromRole="HouseholdAsset" ToRole="Beneficiary" />
+          <Property Name="BeneficiaryId" Type="Guid" Nullable="false" />
+          <Property Name="Count" Type="Int16" Nullable="false" />
+          <Property Name="TotalValue" Type="Int32" Nullable="true" />
+          <Property Name="OrigEntryDate" Type="DateTime" Nullable="true" />
+        </EntityType>
+        <Association Name="HouseholdAsset2AssetType">
+          <End Type="DataModel.HouseholdAsset" Role="HouseholdAsset" Multiplicity="*" />
+          <End Type="DataModel.AssetType" Role="AssetType" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="AssetType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HouseholdAsset">
+              <PropertyRef Name="AssetTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Beneficiary2HouseholdAsset">
+          <End Type="DataModel.Beneficiary" Role="Beneficiary" Multiplicity="1" />
+          <End Type="DataModel.HouseholdAsset" Role="HouseholdAsset" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Beneficiary">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HouseholdAsset">
+              <PropertyRef Name="BeneficiaryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Child2ChildRelationship">
+          <End Type="DataModel.Child" Role="Child" Multiplicity="*" />
+          <End Type="DataModel.ChildRelationship" Role="ChildRelationship" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="ChildRelationship">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Child">
+              <PropertyRef Name="ChildRelationshipId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Adult2AdultRelationship">
+          <End Type="DataModel.Adult" Role="Adult" Multiplicity="*" />
+          <End Type="DataModel.AdultRelationship" Role="AdultRelationship" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="AdultRelationship">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Adult">
+              <PropertyRef Name="AdultRelationshipId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Meals" >
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="Beneficiary" Relationship="DataModel.Beneficiary2Meals" FromRole="Meals" ToRole="Beneficiary" />
+          <Property Name="AvgMealsPerDay" Type="Byte" Nullable="false" />
+          <Property Name="AnyNonVegetarian" Type="Boolean" Nullable="false" />
+          <Property Name="MealTypes" Type="String" Nullable="true" MaxLength="80" />
+          <Property Name="FoodSourceTypes" Type="String" Nullable="false" MaxLength="80" />
+          <Property Name="MilkAsideAmount" Type="Decimal" Nullable="true" Precision="4" Scale="1" />
+          <Property Name="CEGrains" Type="String" Nullable="true" />
+          <Property Name="CEPulse" Type="String" Nullable="true" />
+          <Property Name="CEVegetables" Type="String" Nullable="true" />
+          <NavigationProperty Name="AvgNonVegPerMType" Relationship="DataModel.AvgNonVegPerMType2Meals" FromRole="Meals" ToRole="AvgNonVegPerMType" />
+          <Property Name="AvgNonVegPerMTypeId" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="PKGPerMType" Relationship="DataModel.PKGPerMType2Meals" FromRole="Meals" ToRole="PKGPerMType" />
+          <Property Name="PKGPerMTypeId" Type="Byte" Nullable="false" />
+          <Property Name="OrigEntryDate" Type="DateTime" Nullable="true" />
+        </EntityType>
+        <Association Name="Beneficiary2Meals">
+          <End Type="DataModel.Beneficiary" Role="Beneficiary" Multiplicity="1" />
+          <End Type="DataModel.Meals" Role="Meals" Multiplicity="0..1" />
+        </Association>
+        <EntityType Name="MealType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FoodSourceType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Logins">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="LastLoginTime" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HAssetValue" >
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartnerCompanyId" Type="Guid" Nullable="false" />
+          <Property Name="AssetTypeId" Type="Int16" Nullable="false" />
+          <Property Name="Value" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AssetType" Relationship="DataModel.HAssetValue2AssetType" FromRole="HAssetValue" ToRole="AssetType" />
+          <Property Name="OrigEntryDate" Nullable="true" Type="DateTime" />
+        </EntityType>
+        <Association Name="HAssetValue2AssetType">
+          <End Type="DataModel.HAssetValue" Role="HAssetValue" Multiplicity="*" />
+          <End Type="DataModel.AssetType" Role="AssetType" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="AssetType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HAssetValue">
+              <PropertyRef Name="AssetTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PartnerCompany2HAssetValue">
+          <End Type="DataModel.PartnerCompany" Role="PartnerCompany" Multiplicity="1" />
+          <End Type="DataModel.HAssetValue" Role="HAssetValue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PartnerCompany">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HAssetValue">
+              <PropertyRef Name="PartnerCompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SchoolDistance">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="30" FixedLength="false" />
+        </EntityType>
+        <Association Name="Child2SchoolDistance">
+          <End Type="DataModel.Child" Role="Child" Multiplicity="*" />
+          <End Type="DataModel.SchoolDistance" Role="SchoolDistance" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="SchoolDistance">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Child">
+              <PropertyRef Name="SchoolDistanceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Occupation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="40" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="State">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="60" FixedLength="false" />
+          <Property Name="Abbr" Type="String" Nullable="false" annotation:StoreGeneratedPattern="None" MaxLength="3" Unicode="false" FixedLength="true" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" />
+          <NavigationProperty Name="Country" Relationship="DataModel.State2Country" FromRole="State" ToRole="Country" />
+          <Property Name="CountryId" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="Districts" Relationship="DataModel.District2State" FromRole="State" ToRole="District" />
+          <NavigationProperty Name="Towns" Relationship="DataModel.Town2State" FromRole="State" ToRole="Town" />
+        </EntityType>
+        <Association Name="State2Country">
+          <End Type="DataModel.State" Role="State" Multiplicity="*" />
+          <End Type="DataModel.Country" Role="Country" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="Country">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="State">
+              <PropertyRef Name="CountryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="District">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="60" />
+          <Property Name="Abbr" Type="String" Nullable="false" annotation:StoreGeneratedPattern="None" FixedLength="true" MaxLength="3" Unicode="false" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" />
+          <NavigationProperty Name="State" Relationship="DataModel.District2State" FromRole="District" ToRole="State" />
+          <Property Name="StateId" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="Towns" Relationship="DataModel.Town2District" FromRole="District" ToRole="Town" />
+        </EntityType>
+        <Association Name="District2State">
+          <End Type="DataModel.District" Role="District" Multiplicity="*" />
+          <End Type="DataModel.State" Role="State" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="State">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="District">
+              <PropertyRef Name="StateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Town2State">
+          <End Type="DataModel.Town" Role="Town" Multiplicity="*" />
+          <End Type="DataModel.State" Role="State" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="State">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Town">
+              <PropertyRef Name="StateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Town2District">
+          <End Type="DataModel.Town" Role="Town" Multiplicity="*" />
+          <End Type="DataModel.District" Role="District" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="District">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Town">
+              <PropertyRef Name="DistrictId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SchoolDayPerWeek">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+        <Association Name="SchoolDaysPerWeek2Child">
+          <End Type="DataModel.SchoolDayPerWeek" Role="SchoolDayPerWeek" Multiplicity="0..1" />
+          <End Type="DataModel.Child" Role="Child" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SchoolDayPerWeek">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Child">
+              <PropertyRef Name="SchoolAttendance" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="MajorExpensesInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="FoodM" Type="Int32" Nullable="false" DefaultValue="0" />
+          <Property Name="RentM" Type="Int32" Nullable="false" DefaultValue="0" />
+          <Property Name="SchoolFeesM" Type="Int32" Nullable="false" DefaultValue="0" />
+          <Property Name="WaterAndElecM" Type="Int16" Nullable="false" DefaultValue="0" />
+          <Property Name="CableTvDishM" Type="Int32" Nullable="false" DefaultValue="0" />
+          <Property Name="LoanRepaymentsM" Type="Int32" Nullable="false" DefaultValue="0" />
+          <Property Name="AlcoholM" Type="Int16" Nullable="false" DefaultValue="0" />
+          <Property Name="CinemaFestivFunctA" Type="Int32" Nullable="false" DefaultValue="0" />
+          <Property Name="LoomRelA" Type="Int32" Nullable="false" DefaultValue="0" />
+          <Property Name="OtherExpM" Type="Int32" Nullable="false" DefaultValue="0" />
+          <Property Name="OtherExpDescr" Type="String" Nullable="true" />
+          <NavigationProperty Name="Beneficiary" Relationship="DataModel.Beneficiary2MajorExpenses" FromRole="MajorExpensesInfo" ToRole="Beneficiary" />
+          <Property Name="OrigEntryDate" Type="DateTime" Nullable="true" />
+        </EntityType>
+        <Association Name="Beneficiary2MajorExpenses">
+          <End Type="DataModel.Beneficiary" Role="Beneficiary" Multiplicity="1" />
+          <End Type="DataModel.MajorExpensesInfo" Role="MajorExpensesInfo" Multiplicity="0..1" />
+        </Association>
+        <EntityType Name="HealthCareInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="HcProviders" Type="String" Nullable="false" />
+          <Property Name="HcFrequencyQ" Type="Int16" Nullable="true" />
+          <Property Name="HealthIssues" Type="String" Nullable="true" />
+          <Property Name="TreatmentCostsQ" Type="Int32" Nullable="true" />
+          <Property Name="MedSources" Type="String" Nullable="true" />
+          <NavigationProperty Name="Beneficiary" Relationship="DataModel.Beneficiary2HealthCareInfo" FromRole="HealthCareInfo" ToRole="Beneficiary" />
+          <Property Name="OrigEntryDate" Type="DateTime" Nullable="true" />
+        </EntityType>
+        <Association Name="Beneficiary2HealthCareInfo">
+          <End Type="DataModel.Beneficiary" Role="Beneficiary" Multiplicity="1" />
+          <End Type="DataModel.HealthCareInfo" Role="HealthCareInfo" Multiplicity="0..1" />
+        </Association>
+        <EntityType Name="HcProviderType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="60" />
+        </EntityType>
+        <EntityType Name="HealthIssueType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="60" />
+        </EntityType>
+        <EntityType Name="MedSourceType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="60" />
+        </EntityType>
+        <EntityType Name="GovernmentServicesInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="GovCards" Type="String" Nullable="false" />
+          <Property Name="OtherCardDescr" Type="String" Nullable="true" />
+          <Property Name="RcvGovPension" Type="Boolean" Nullable="true" />
+          <NavigationProperty Name="Beneficiary" Relationship="DataModel.Beneficiary2GovernmentServices" FromRole="GovernmentServicesInfo" ToRole="Beneficiary" />
+          <Property Name="RcvPrivatePension" Type="Boolean" Nullable="true" />
+          <Property Name="GovServices" Type="String" Nullable="false" />
+          <Property Name="OrigEntryDate" Type="DateTime" Nullable="true" />
+        </EntityType>
+        <EntityType Name="GovCardType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="60" />
+        </EntityType>
+        <EntityType Name="GovServiceType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="60" />
+        </EntityType>
+        <Association Name="Beneficiary2GovernmentServices">
+          <End Type="DataModel.Beneficiary" Role="Beneficiary" Multiplicity="1" />
+          <End Type="DataModel.GovernmentServicesInfo" Role="GovernmentServicesInfo" Multiplicity="0..1" />
+        </Association>
+        <EntityType Name="HousingInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="HasElectricity" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="NumberOfRoomsType" Relationship="DataModel.HousingInfo2NumberOfRooms" FromRole="HousingInfo" ToRole="NumberOfRoomsType" />
+          <Property Name="NumberOfRoomsTypeId" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="RoofMaterialType" Relationship="DataModel.HousingInfo2RoofMaterial" FromRole="HousingInfo" ToRole="RoofMaterialType" />
+          <Property Name="RoofMaterialTypeId" Type="Byte" Nullable="false" />
+          <Property Name="WaterSourceTypes" Type="String" Nullable="false" />
+          <NavigationProperty Name="WallMaterialType" Relationship="DataModel.HousingInfo2WallMaterial" FromRole="HousingInfo" ToRole="WallMaterialType" />
+          <Property Name="WallMaterialTypeId" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="CookingEnergyType" Relationship="DataModel.HousingInfo2CookingEnergyType" FromRole="HousingInfo" ToRole="CookingEnergyType" />
+          <Property Name="CookingEnergyTypeId" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="Beneficiary" Relationship="DataModel.Beneficiary2HousingInfo" FromRole="HousingInfo" ToRole="Beneficiary" />
+          <NavigationProperty Name="ToiletType" Relationship="DataModel.HousingInfo2ToiletType" FromRole="HousingInfo" ToRole="ToiletType" />
+          <Property Name="ToiletTypeId" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="HouseQualityType" Relationship="DataModel.HousingInfoHouseQuality" FromRole="HousingInfo" ToRole="HouseQuality" />
+          <Property Name="HouseQualityTypeId" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="Religion" Relationship="DataModel.Religion2HousingInfo" FromRole="HousingInfo" ToRole="Religion" />
+          <Property Name="ReligionId" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="Caste" Relationship="DataModel.Caste2HousingInfo" FromRole="HousingInfo" ToRole="Caste" />
+          <Property Name="CasteId" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="HouseOwnershipType" Relationship="DataModel.HouseOwnershipType2HousingInfo" FromRole="HousingInfo" ToRole="HouseOwnershipType" />
+          <Property Name="HouseOwnershipTypeId" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="WaterSourceDistanceType" Relationship="DataModel.WaterSourceDistanceType2HousingInfo" FromRole="HousingInfo" ToRole="WaterSourceDistanceType" />
+          <Property Name="WaterSourceDistanceTypeId" Type="Byte" Nullable="false" />
+          <Property Name="SavingsTypes" Type="String" Nullable="false" />
+          <Property Name="LoanPurposeTypes" Type="String" Nullable="false" />
+          <Property Name="OrigEntryDate" Type="DateTime" Nullable="true" />
+        </EntityType>
+        <EntityType Name="NumberOfRoomsType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="RoofMaterialType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="WallMaterialType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="WaterSourceType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ToiletType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CookingEnergyType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+        <Association Name="HousingInfo2NumberOfRooms">
+          <End Type="DataModel.HousingInfo" Role="HousingInfo" Multiplicity="*" />
+          <End Type="DataModel.NumberOfRoomsType" Role="NumberOfRoomsType" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="NumberOfRoomsType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HousingInfo">
+              <PropertyRef Name="NumberOfRoomsTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="HousingInfo2RoofMaterial">
+          <End Type="DataModel.HousingInfo" Role="HousingInfo" Multiplicity="*" />
+          <End Type="DataModel.RoofMaterialType" Role="RoofMaterialType" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="RoofMaterialType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HousingInfo">
+              <PropertyRef Name="RoofMaterialTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="HousingInfo2WallMaterial">
+          <End Type="DataModel.HousingInfo" Role="HousingInfo" Multiplicity="*" />
+          <End Type="DataModel.WallMaterialType" Role="WallMaterialType" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="WallMaterialType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HousingInfo">
+              <PropertyRef Name="WallMaterialTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="HousingInfo2CookingEnergyType">
+          <End Type="DataModel.HousingInfo" Role="HousingInfo" Multiplicity="*" />
+          <End Type="DataModel.CookingEnergyType" Role="CookingEnergyType" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="CookingEnergyType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HousingInfo">
+              <PropertyRef Name="CookingEnergyTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Beneficiary2HousingInfo">
+          <End Type="DataModel.Beneficiary" Role="Beneficiary" Multiplicity="1" />
+          <End Type="DataModel.HousingInfo" Role="HousingInfo" Multiplicity="0..1" />
+        </Association>
+        <Association Name="HousingInfo2ToiletType">
+          <End Type="DataModel.HousingInfo" Role="HousingInfo" Multiplicity="*" />
+          <End Type="DataModel.ToiletType" Role="ToiletType" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="ToiletType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HousingInfo">
+              <PropertyRef Name="ToiletTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="HouseQualityType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+        <Association Name="HousingInfoHouseQuality">
+          <End Type="DataModel.HousingInfo" Role="HousingInfo" Multiplicity="*" />
+          <End Type="DataModel.HouseQualityType" Role="HouseQuality" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="HouseQuality">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HousingInfo">
+              <PropertyRef Name="HouseQualityTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Beneficiary2PriOccupation">
+          <End Type="DataModel.Beneficiary" Role="Beneficiary" Multiplicity="*" />
+          <End Type="DataModel.Occupation" Role="Occupation" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="Occupation">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Beneficiary">
+              <PropertyRef Name="PrimaryOccupationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Beneficiary2SecOccupation">
+          <End Type="DataModel.Beneficiary" Role="Beneficiary" Multiplicity="*" />
+          <End Type="DataModel.Occupation" Role="Occupation" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="Occupation">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Beneficiary">
+              <PropertyRef Name="SecondaryOccupationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Religion2HousingInfo">
+          <End Type="DataModel.Religion" Role="Religion" Multiplicity="1" />
+          <End Type="DataModel.HousingInfo" Role="HousingInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Religion">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HousingInfo">
+              <PropertyRef Name="ReligionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Caste2HousingInfo">
+          <End Type="DataModel.Caste" Role="Caste" Multiplicity="1" />
+          <End Type="DataModel.HousingInfo" Role="HousingInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Caste">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HousingInfo">
+              <PropertyRef Name="CasteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="WaterSourceDistanceType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HouseOwnershipType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+        <Association Name="HouseOwnershipType2HousingInfo">
+          <End Type="DataModel.HouseOwnershipType" Role="HouseOwnershipType" Multiplicity="1" />
+          <End Type="DataModel.HousingInfo" Role="HousingInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HouseOwnershipType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HousingInfo">
+              <PropertyRef Name="HouseOwnershipTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="WaterSourceDistanceType2HousingInfo">
+          <End Type="DataModel.WaterSourceDistanceType" Role="WaterSourceDistanceType" Multiplicity="1" />
+          <End Type="DataModel.HousingInfo" Role="HousingInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WaterSourceDistanceType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HousingInfo">
+              <PropertyRef Name="WaterSourceDistanceTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SavingsType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LoanPurposeType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GrainType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PulseType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VegetableType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PKG_M_Type">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HistoryRec">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RefId" Type="Guid" Nullable="false" />
+          <Property Name="Type" Type="Byte" Nullable="false" />
+          <Property Name="TimeStamp" Type="DateTime" Nullable="false" />
+          <Property Name="User" Type="Guid" Nullable="false" />
+          <Property Name="Value" Type="String" Nullable="false" MaxLength="Max" />
+          <Property Name="Created" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AvgNonVegPerMType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+        <Association Name="AvgNonVegPerMType2Meals">
+          <End Type="DataModel.AvgNonVegPerMType" Role="AvgNonVegPerMType" Multiplicity="1" />
+          <End Type="DataModel.Meals" Role="Meals" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AvgNonVegPerMType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Meals">
+              <PropertyRef Name="AvgNonVegPerMTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="PKGPerMType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+        <Association Name="PKGPerMType2Meals">
+          <End Type="DataModel.PKGPerMType" Role="PKGPerMType" Multiplicity="1" />
+          <End Type="DataModel.Meals" Role="Meals" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PKGPerMType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Meals">
+              <PropertyRef Name="PKGPerMTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PrimaryOccupation2Adult">
+          <End Type="DataModel.Occupation" Role="Occupation" Multiplicity="1" />
+          <End Type="DataModel.Adult" Role="Adult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Occupation">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Adult">
+              <PropertyRef Name="PrimaryOccupationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SecondaryOccupation2Adult">
+          <End Type="DataModel.Occupation" Role="Occupation" Multiplicity="1" />
+          <End Type="DataModel.Adult" Role="Adult" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Occupation">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Adult">
+              <PropertyRef Name="SecondaryOccupationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="WhyNotInSchoolType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DataModelStoreContainer" CdmEntityContainer="DataModelContainer">
+    <EntitySetMapping Name="PartnerCompanies">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.PartnerCompany)">
+        <MappingFragment StoreEntitySet="PartnerCompanies">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="StartDateDay" ColumnName="StartDateDay" />
+          <ScalarProperty Name="StartDateMonth" ColumnName="StartDateMonth" />
+          <ScalarProperty Name="StartDateYear" ColumnName="StartDateYear" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Towns">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Town)">
+        <MappingFragment StoreEntitySet="Towns">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Country)">
+        <MappingFragment StoreEntitySet="Countries">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Beneficiaries">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Beneficiary)">
+        <MappingFragment StoreEntitySet="Beneficiaries">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="ReligionId" ColumnName="ReligionId" />
+          <ScalarProperty Name="TownId" ColumnName="TownId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Disability" ColumnName="Disability" />
+          <ScalarProperty Name="Disabilities" ColumnName="Disabilities" />
+          <ScalarProperty Name="EducationLevelId" ColumnName="EducationLevelId" />
+          <ScalarProperty Name="BirthDay" ColumnName="BirthDay" />
+          <ScalarProperty Name="BirthMonth" ColumnName="BirthMonth" />
+          <ScalarProperty Name="BirthYear" ColumnName="BirthYear" />
+          <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+          <ScalarProperty Name="CasteId" ColumnName="CasteId" />
+          <ScalarProperty Name="UniqueId" ColumnName="UniqueId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PhotoUrl" ColumnName="PhotoUrl" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="PrimaryOccupationId" ColumnName="PrimaryOccupationId" />
+          <ScalarProperty Name="SecondaryOccupationId" ColumnName="SecondaryOccupationId" />
+          <ScalarProperty Name="PrimaryWorkDaysM" ColumnName="PrimaryWorkDaysM" />
+          <ScalarProperty Name="SecondaryWorkDaysM" ColumnName="SecondaryWorkDaysM" />
+          <ScalarProperty Name="PrimaryDailyWage" ColumnName="PrimaryDailyWage" />
+          <ScalarProperty Name="SecondaryDailyWage" ColumnName="SecondaryDailyWage" />
+          <ScalarProperty Name="StartDateDay" ColumnName="StartDateDay" />
+          <ScalarProperty Name="StartDateMonth" ColumnName="StartDateMonth" />
+          <ScalarProperty Name="StartDateYear" ColumnName="StartDateYear" />
+          <ScalarProperty Name="OrigEntryDate" ColumnName="OrigEntryDate" />
+          <ScalarProperty Name="PCompanyId" ColumnName="PCompanyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genders">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Gender)">
+        <MappingFragment StoreEntitySet="Genders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Religions">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Religion)">
+        <MappingFragment StoreEntitySet="Religions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Castes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Caste)">
+        <MappingFragment StoreEntitySet="Castes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Disabilities">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Disability)">
+        <MappingFragment StoreEntitySet="Disabilities">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EducationLevels">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.EducationLevel)">
+        <MappingFragment StoreEntitySet="EducationLevels">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adults">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Adult)">
+        <MappingFragment StoreEntitySet="Adults">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="EducationLevelId" ColumnName="EducationLevelId" />
+          <ScalarProperty Name="BeneficiaryId" ColumnName="BeneficiaryId" />
+          <ScalarProperty Name="AdultRelationshipId" ColumnName="AdultRelationshipId" />
+          <ScalarProperty Name="Disability" ColumnName="Disability" />
+          <ScalarProperty Name="Disabilities" ColumnName="Disabilities" />
+          <ScalarProperty Name="BirthDay" ColumnName="BirthDay" />
+          <ScalarProperty Name="BirthMonth" ColumnName="BirthMonth" />
+          <ScalarProperty Name="BirthYear" ColumnName="BirthYear" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="EmplSameCompany" ColumnName="EmplSameCompany" />
+          <ScalarProperty Name="PrimaryOccupationId" ColumnName="PrimaryOccupationId" />
+          <ScalarProperty Name="SecondaryOccupationId" ColumnName="SecondaryOccupationId" />
+          <ScalarProperty Name="PrimaryWorkDaysM" ColumnName="PrimaryWorkDaysM" />
+          <ScalarProperty Name="SecondaryWorkDaysM" ColumnName="SecondaryWorkDaysM" />
+          <ScalarProperty Name="PrimaryDailyWage" ColumnName="PrimaryDailyWage" />
+          <ScalarProperty Name="SecondaryDailyWage" ColumnName="SecondaryDailyWage" />
+          <ScalarProperty Name="OrigEntryDate" ColumnName="OrigEntryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdultRelationships">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.AdultRelationship)">
+        <MappingFragment StoreEntitySet="AdultRelationships">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Children">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Child)">
+        <MappingFragment StoreEntitySet="Children">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BeneficiaryId" ColumnName="BeneficiaryId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="ChildRelationshipId" ColumnName="ChildRelationshipId" />
+          <ScalarProperty Name="Disability" ColumnName="Disability" />
+          <ScalarProperty Name="Disabilities" ColumnName="Disabilities" />
+          <ScalarProperty Name="EnrolledInSchool" ColumnName="EnrolledInSchool" />
+          <ScalarProperty Name="WhyNotInSchool" ColumnName="WhyNotInSchool" />
+          <ScalarProperty Name="SchoolTypeId" ColumnName="SchoolTypeId" />
+          <ScalarProperty Name="SchoolDistanceId" ColumnName="SchoolDistanceId" />
+          <ScalarProperty Name="ClassLevelId" ColumnName="ClassLevelId" />
+          <ScalarProperty Name="MonthlyEduExpenses" ColumnName="MonthlyEduExpenses" />
+          <ScalarProperty Name="BirthDay" ColumnName="BirthDay" />
+          <ScalarProperty Name="BirthMonth" ColumnName="BirthMonth" />
+          <ScalarProperty Name="BirthYear" ColumnName="BirthYear" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="SchoolAttendance" ColumnName="SchoolAttendance" />
+          <ScalarProperty Name="OrigEntryDate" ColumnName="OrigEntryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChildRelationships">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.ChildRelationship)">
+        <MappingFragment StoreEntitySet="ChildRelationships">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.SchoolType)">
+        <MappingFragment StoreEntitySet="SchoolTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClassLevels">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.ClassLevel)">
+        <MappingFragment StoreEntitySet="ClassLevels">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartnerStaffMembers">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.PartnerStaffMember)">
+        <MappingFragment StoreEntitySet="PartnerStaffMembers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="BirthDay" ColumnName="BirthDay" />
+          <ScalarProperty Name="BirthMonth" ColumnName="BirthMonth" />
+          <ScalarProperty Name="BirthYear" ColumnName="BirthYear" />
+          <ScalarProperty Name="StaffTypeId" ColumnName="StaffTypeId" />
+          <ScalarProperty Name="InternalPartnerEmployeeId" ColumnName="InternalPartnerEmployeeId" />
+          <ScalarProperty Name="PartnerCompanyId" ColumnName="PartnerCompanyId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StaffTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.StaffType)">
+        <MappingFragment StoreEntitySet="StaffTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Languages">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Language)">
+        <MappingFragment StoreEntitySet="Languages">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartnerAdmins">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.PartnerAdmin)">
+        <MappingFragment StoreEntitySet="PartnerAdmins">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PartnerCompanyId" ColumnName="PartnerCompanyId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AssetTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.AssetType)">
+        <MappingFragment StoreEntitySet="AssetTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HouseholdAssets">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.HouseholdAsset)">
+        <MappingFragment StoreEntitySet="HouseholdAssets">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AssetTypeId" ColumnName="AssetTypeId" />
+          <ScalarProperty Name="BeneficiaryId" ColumnName="BeneficiaryId" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="TotalValue" ColumnName="TotalValue" />
+          <ScalarProperty Name="OrigEntryDate" ColumnName="OrigEntryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Meals">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Meals)">
+        <MappingFragment StoreEntitySet="Meals">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AvgMealsPerDay" ColumnName="AvgMealsPerDay" />
+          <ScalarProperty Name="AnyNonVegetarian" ColumnName="AnyNonVegetarian" />
+          <ScalarProperty Name="MealTypes" ColumnName="MealTypes" />
+          <ScalarProperty Name="FoodSourceTypes" ColumnName="FoodSourceTypes" />
+          <ScalarProperty Name="MilkAsideAmount" ColumnName="MilkAsideAmount" />
+          <ScalarProperty Name="CEGrains" ColumnName="CEGrains" />
+          <ScalarProperty Name="CEPulse" ColumnName="CEPulse" />
+          <ScalarProperty Name="CEVegetables" ColumnName="CEVegetables" />
+          <ScalarProperty Name="AvgNonVegPerMTypeId" ColumnName="AvgNonVegPerMTypeId" />
+          <ScalarProperty Name="PKGPerMTypeId" ColumnName="PKGPerMTypeId" />
+          <ScalarProperty Name="OrigEntryDate" ColumnName="OrigEntryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MealTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.MealType)">
+        <MappingFragment StoreEntitySet="MealTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FoodSourceTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.FoodSourceType)">
+        <MappingFragment StoreEntitySet="FoodSourceTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Logins)">
+        <MappingFragment StoreEntitySet="Logins">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LastLoginTime" ColumnName="LastLoginTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HAssetValues">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.HAssetValue)">
+        <MappingFragment StoreEntitySet="HAssetValues">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PartnerCompanyId" ColumnName="PartnerCompanyId" />
+          <ScalarProperty Name="AssetTypeId" ColumnName="AssetTypeId" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="OrigEntryDate" ColumnName="OrigEntryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolDistances">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.SchoolDistance)">
+        <MappingFragment StoreEntitySet="SchoolDistances">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Occupations">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Occupation)">
+        <MappingFragment StoreEntitySet="Occupations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="States">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.State)">
+        <MappingFragment StoreEntitySet="States">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Abbr" ColumnName="Abbr" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Districts">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.District)">
+        <MappingFragment StoreEntitySet="Districts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Abbr" ColumnName="Abbr" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolDaysPerWeek">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.SchoolDayPerWeek)">
+        <MappingFragment StoreEntitySet="SchoolDaysPerWeek">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MajorExpenses">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.MajorExpensesInfo)">
+        <MappingFragment StoreEntitySet="MajorExpenses">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FoodM" ColumnName="FoodM" />
+          <ScalarProperty Name="RentM" ColumnName="RentM" />
+          <ScalarProperty Name="SchoolFeesM" ColumnName="SchoolFeesM" />
+          <ScalarProperty Name="WaterAndElecM" ColumnName="WaterAndElecM" />
+          <ScalarProperty Name="CableTvDishM" ColumnName="CableTvDishM" />
+          <ScalarProperty Name="LoanRepaymentsM" ColumnName="LoanRepaymentsM" />
+          <ScalarProperty Name="AlcoholM" ColumnName="AlcoholM" />
+          <ScalarProperty Name="CinemaFestivFunctA" ColumnName="CinemaFestivFunctA" />
+          <ScalarProperty Name="LoomRelA" ColumnName="LoomRelA" />
+          <ScalarProperty Name="OtherExpM" ColumnName="OtherExpM" />
+          <ScalarProperty Name="OtherExpDescr" ColumnName="OtherExpDescr" />
+          <ScalarProperty Name="OrigEntryDate" ColumnName="OrigEntryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HealthCareInfos">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.HealthCareInfo)">
+        <MappingFragment StoreEntitySet="HealthCareInfos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HcProviders" ColumnName="HcProviders" />
+          <ScalarProperty Name="HcFrequencyQ" ColumnName="HcFrequencyQ" />
+          <ScalarProperty Name="HealthIssues" ColumnName="HealthIssues" />
+          <ScalarProperty Name="TreatmentCostsQ" ColumnName="TreatmentCostsQ" />
+          <ScalarProperty Name="MedSources" ColumnName="MedSources" />
+          <ScalarProperty Name="OrigEntryDate" ColumnName="OrigEntryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HcProviderTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.HcProviderType)">
+        <MappingFragment StoreEntitySet="HcProviderTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HealthIssueTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.HealthIssueType)">
+        <MappingFragment StoreEntitySet="HealthIssueTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedSourceTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.MedSourceType)">
+        <MappingFragment StoreEntitySet="MedSourceTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GovernmentServices">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.GovernmentServicesInfo)">
+        <MappingFragment StoreEntitySet="GovernmentServices">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GovCards" ColumnName="GovCards" />
+          <ScalarProperty Name="OtherCardDescr" ColumnName="OtherCardDescr" />
+          <ScalarProperty Name="RcvGovPension" ColumnName="RcvGovPension" />
+          <ScalarProperty Name="RcvPrivatePension" ColumnName="RcvPrivatePension" />
+          <ScalarProperty Name="GovServices" ColumnName="GovServices" />
+          <ScalarProperty Name="OrigEntryDate" ColumnName="OrigEntryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GovCardTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.GovCardType)">
+        <MappingFragment StoreEntitySet="GovCardTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GovServiceTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.GovServiceType)">
+        <MappingFragment StoreEntitySet="GovServiceTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HousingInfoes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.HousingInfo)">
+        <MappingFragment StoreEntitySet="HousingInfoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HasElectricity" ColumnName="HasElectricity" />
+          <ScalarProperty Name="NumberOfRoomsTypeId" ColumnName="NumberOfRoomsTypeId" />
+          <ScalarProperty Name="RoofMaterialTypeId" ColumnName="RoofMaterialTypeId" />
+          <ScalarProperty Name="WaterSourceTypes" ColumnName="WaterSourceTypes" />
+          <ScalarProperty Name="WallMaterialTypeId" ColumnName="WallMaterialTypeId" />
+          <ScalarProperty Name="CookingEnergyTypeId" ColumnName="CookingEnergyTypeId" />
+          <ScalarProperty Name="ToiletTypeId" ColumnName="ToiletTypeId" />
+          <ScalarProperty Name="HouseQualityTypeId" ColumnName="HouseQualityTypeId" />
+          <ScalarProperty Name="ReligionId" ColumnName="ReligionId" />
+          <ScalarProperty Name="CasteId" ColumnName="CasteId" />
+          <ScalarProperty Name="HouseOwnershipTypeId" ColumnName="HouseOwnershipTypeId" />
+          <ScalarProperty Name="WaterSourceDistanceTypeId" ColumnName="WaterSourceDistanceTypeId" />
+          <ScalarProperty Name="SavingsTypes" ColumnName="SavingsTypes" />
+          <ScalarProperty Name="LoanPurposeTypes" ColumnName="LoanPurposeTypes" />
+          <ScalarProperty Name="OrigEntryDate" ColumnName="OrigEntryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NumberOfRoomsTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.NumberOfRoomsType)">
+        <MappingFragment StoreEntitySet="NumberOfRoomsTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoofMaterialTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.RoofMaterialType)">
+        <MappingFragment StoreEntitySet="RoofMaterialTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WallMaterialTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.WallMaterialType)">
+        <MappingFragment StoreEntitySet="WallMaterialTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WaterSourceTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.WaterSourceType)">
+        <MappingFragment StoreEntitySet="WaterSourceTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ToiletTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.ToiletType)">
+        <MappingFragment StoreEntitySet="ToiletTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CookingEnergyTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.CookingEnergyType)">
+        <MappingFragment StoreEntitySet="CookingEnergyTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HouseQualityTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.HouseQualityType)">
+        <MappingFragment StoreEntitySet="HouseQualityTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WaterSourceDistanceTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.WaterSourceDistanceType)">
+        <MappingFragment StoreEntitySet="WaterSourceDistanceTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HouseOwnershipTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.HouseOwnershipType)">
+        <MappingFragment StoreEntitySet="HouseOwnershipTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SavingsTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.SavingsType)">
+        <MappingFragment StoreEntitySet="SavingsTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoanPurposeTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.LoanPurposeType)">
+        <MappingFragment StoreEntitySet="LoanPurposeTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GrainTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.GrainType)">
+        <MappingFragment StoreEntitySet="GrainTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PulseTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.PulseType)">
+        <MappingFragment StoreEntitySet="PulseTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VegetableTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.VegetableType)">
+        <MappingFragment StoreEntitySet="VegetableTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PKG_M_Type">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.PKG_M_Type)">
+        <MappingFragment StoreEntitySet="PKG_M_Type">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HistoryRecs">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.HistoryRec)">
+        <MappingFragment StoreEntitySet="HistoryRecs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RefId" ColumnName="RefId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="User" ColumnName="User" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AvgNonVegPerMTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.AvgNonVegPerMType)">
+        <MappingFragment StoreEntitySet="AvgNonVegPerMTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PKGPerMTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.PKGPerMType)">
+        <MappingFragment StoreEntitySet="PKGPerMTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WhyNotInSchoolTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DataModel.WhyNotInSchoolType)">
+        <MappingFragment StoreEntitySet="WhyNotInSchoolTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Beneficiary2Meals" TypeName="DataModel.Beneficiary2Meals" StoreEntitySet="Meals">
+      <EndProperty Name="Beneficiary">
+        <ScalarProperty Name="Id" ColumnName="Beneficiary_Id" />
+      </EndProperty>
+      <EndProperty Name="Meals">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Beneficiary2MajorExpenses" TypeName="DataModel.Beneficiary2MajorExpenses" StoreEntitySet="MajorExpenses">
+      <EndProperty Name="Beneficiary">
+        <ScalarProperty Name="Id" ColumnName="Beneficiary_Id" />
+      </EndProperty>
+      <EndProperty Name="MajorExpensesInfo">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Beneficiary2HealthCareInfo" TypeName="DataModel.Beneficiary2HealthCareInfo" StoreEntitySet="HealthCareInfos">
+      <EndProperty Name="Beneficiary">
+        <ScalarProperty Name="Id" ColumnName="Beneficiary_Id" />
+      </EndProperty>
+      <EndProperty Name="HealthCareInfo">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Beneficiary2GovernmentServices" TypeName="DataModel.Beneficiary2GovernmentServices" StoreEntitySet="GovernmentServices">
+      <EndProperty Name="Beneficiary">
+        <ScalarProperty Name="Id" ColumnName="Beneficiary_Id" />
+      </EndProperty>
+      <EndProperty Name="GovernmentServicesInfo">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Beneficiary2HousingInfo" TypeName="DataModel.Beneficiary2HousingInfo" StoreEntitySet="HousingInfoes">
+      <EndProperty Name="Beneficiary">
+        <ScalarProperty Name="Id" ColumnName="Beneficiary_Id" />
+      </EndProperty>
+      <EndProperty Name="HousingInfo">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

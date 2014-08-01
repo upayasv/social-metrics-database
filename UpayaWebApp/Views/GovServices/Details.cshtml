@@ -1,0 +1,37 @@
+﻿@model UpayaWebApp.GovernmentServicesInfo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Government Services details for beneficiary @Model.Beneficiary.Name</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GovCards)
+        </dt>
+        <dd>
+            @Html.Raw(ViewBag.CardsValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherCardDescr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OtherCardDescr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GovServices)
+        </dt>
+        <dd>
+            @Html.Raw(ViewBag.ServicesValue)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to beneficiary", "Details", "Beneficiary", new { id = Model.Id }, null)
+</p>

@@ -1,0 +1,164 @@
+﻿@model UpayaWebApp.HousingInfo
+
+@{
+    ViewBag.Title = "Edit Housing Info";
+}
+
+<h2>Edit Housing Info for beneficiary @Model.Beneficiary.Name</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ReligionId, "ReligionId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("ReligionId", String.Empty)
+                @Html.ValidationMessageFor(model => model.ReligionId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CasteId, "CasteId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("CasteId", String.Empty)
+                @Html.ValidationMessageFor(model => model.CasteId)
+            </div>
+        </div>
+        <!--
+        <div class="form-group">
+            Html.LabelFor(model => model.HouseQualityTypeId, new { class = "control-label col-md-2" })
+            <div class="col-md-10">
+                Html.DropDownList("HouseQualityTypeId", String.Empty)
+                Html.ValidationMessageFor(model => model.HouseQualityTypeId)
+            </div>
+        </div>
+        -->
+        <div class="form-group">
+            @Html.LabelFor(model => model.HasElectricity, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.HasElectricity)
+                @Html.ValidationMessageFor(model => model.HasElectricity)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NumberOfRoomsTypeId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("NumberOfRoomsTypeId", String.Empty)
+                @Html.ValidationMessageFor(model => model.NumberOfRoomsTypeId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.RoofMaterialTypeId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("RoofMaterialTypeId", String.Empty)
+                @Html.ValidationMessageFor(model => model.RoofMaterialTypeId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.WaterSourceTypes, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @foreach (CheckBoxData cbd in ViewBag.WaterSourcesCBData)
+                {
+                    @Html.CheckBox(cbd.Id.ToString(), cbd.Checked)
+                    @Html.Raw("&nbsp;" + cbd.Title + "<br />\n")
+                }
+                @Html.ValidationMessageFor(model => model.WaterSourceTypes)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.WaterSourceDistanceTypeId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("WaterSourceDistanceTypeId", String.Empty)
+                @Html.ValidationMessageFor(model => model.WaterSourceDistanceTypeId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.WallMaterialTypeId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("WallMaterialTypeId", String.Empty)
+                @Html.ValidationMessageFor(model => model.WallMaterialTypeId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CookingEnergyTypeId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("CookingEnergyTypeId", String.Empty)
+                @Html.ValidationMessageFor(model => model.CookingEnergyTypeId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ToiletTypeId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("ToiletTypeId", String.Empty)
+                @Html.ValidationMessageFor(model => model.ToiletTypeId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.HouseOwnershipTypeId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("HouseOwnershipTypeId", String.Empty)
+                @Html.ValidationMessageFor(model => model.HouseOwnershipTypeId)
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SavingsTypes, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @foreach (CheckBoxData cbd in ViewBag.SavingsTypesCBData)
+                {
+                    @Html.CheckBox(cbd.Id.ToString(), cbd.Checked)
+                    @Html.Raw("&nbsp;" + cbd.Title + "<br />\n")
+                }
+                @Html.ValidationMessageFor(model => model.SavingsTypes)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LoanPurposeTypes, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @foreach (CheckBoxData cbd in ViewBag.LoanPurposeTypesCBData)
+                {
+                    @Html.CheckBox(cbd.Id.ToString(), cbd.Checked)
+                    @Html.Raw("&nbsp;" + cbd.Title + "<br />\n")
+                }
+                @Html.ValidationMessageFor(model => model.LoanPurposeTypes)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.OrigEntryDate, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("OrigEntryDate", FormatHelper.FormatOrigDate(Model.OrigEntryDate))
+                @Html.ValidationMessageFor(model => model.OrigEntryDate)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to beneficiary", "Details", "Beneficiary", new { id = Model.Id }, null)
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

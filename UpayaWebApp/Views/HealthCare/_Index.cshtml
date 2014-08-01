@@ -1,0 +1,57 @@
+﻿@model IEnumerable<UpayaWebApp.HealthCareInfo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.HcProviders)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HcFrequency)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HealthIssues)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TreatmentCostsQ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MedSources)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.HcProviders)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HcFrequency)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HealthIssues)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TreatmentCostsQ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MedSources)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

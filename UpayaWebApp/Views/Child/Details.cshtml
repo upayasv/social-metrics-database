@@ -1,0 +1,97 @@
+﻿@model UpayaWebApp.Child
+
+@{
+    ViewBag.Title = "Child Details";
+}
+
+<h2>Child Details (beneficiary: @Html.ActionLink(Model.Beneficiary.Name, "Details", "Beneficiary", new { id = Model.Beneficiary.Id }, null))</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gender.Title)
+        </dd>
+        <!--
+        <dt>
+            Html.DisplayNameFor(model => model.ChildRelationship.Title)
+        </dt>
+        <dd>
+            Html.DisplayFor(model => model.ChildRelationship.Title)
+        </dd>
+        -->
+        <dt>
+            Birthday
+        </dt>
+        <dd>
+            <!--FormatHelper.FormatDate(Model.BirthDay, Model.BirthMonth, Model.BirthYear)-->
+            @Html.DisplayFor(model => model.BirthYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Disability)
+        </dt>
+        <dd>
+            @FormatHelper.FormatBool(Model.Disability)
+            @if (Model.Disability)
+            {
+                @Html.Raw(" " + ViewBag.DisabilitiesValue)
+            }
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnrolledInSchool)
+        </dt>
+        <dd>
+            @FormatHelper.FormatBool(Model.EnrolledInSchool)
+        </dd>
+@if(Model.EnrolledInSchool)
+{
+        <dt>
+            @Html.DisplayNameFor(model => model.SchoolType.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SchoolType.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MonthlyEduExpenses)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MonthlyEduExpenses)
+        </dd>
+        <!--
+        <dt>
+            Html.DisplayNameFor(model => model.SchoolAttendance)
+        </dt>
+        <dd>
+            Html.DisplayFor(model => model.SchoolDayPerWeek.Title)
+        </dd>
+        -->
+}
+else
+{
+        <dt>
+            @Html.DisplayNameFor(model => model.WhyNotInSchool)
+        </dt>
+        <dd>
+            @Html.Raw(ViewBag.WhyNotInSchoolValue)
+        </dd>
+}
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index", new { bid = ViewBag.Beneficiary.Id }) |
+    @Html.ActionLink("Back to beneficiary", "Details", "Beneficiary", new { id = ViewBag.Beneficiary.Id }, null)
+</p>

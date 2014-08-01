@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@if (Request.IsAuthenticated)
+{
+    if (User.IsInRole(Constants.SYS_ADMIN))
+    {
+        <h3>SysAdmin menu</h3>
+        @Html.ActionLink("Create Upaya admin", "CreateUpayaAdmin", "Account")
+        <br /><br />@Html.ActionLink("Init DB list values", "InitDB")
+        <br /><br />@Html.ActionLink("Create TEMP records", "CreateTempRecs")
+        <hr />
+        @Html.ActionLink("List Upaya admins", "ListNextLevelAdmins")
+        <hr />
+        @Html.ActionLink("Show recent users", "ShowRecentUsers")
+        <p></p>
+    }
+    else if (User.IsInRole(Constants.UPAYA_ADMIN))
+    {
+        <h3>UpayaAdmin menu</h3>
+        @Html.ActionLink("Create Partner Company", "Create", "PartnerCompany")
+        <br /><br />@Html.ActionLink("Create Partner admin", "Create", "PartnerAdmin")
+        <hr />
+        @Html.ActionLink("List partner companies", "Index", "PartnerCompany")
+        <br /><br />@Html.ActionLink("List partner admins", "Index", "PartnerAdmin")
+        <hr />
+        @Html.ActionLink("Show recent users", "ShowRecentUsers")
+        <hr />
+        @Html.ActionLink("Basic data stats", "BasicStats")
+        <p></p>
+    }
+    else if (User.IsInRole(Constants.PARTNER_ADMIN))
+    {
+        <h3>PartnerAdmin menu</h3>
+        @Html.ActionLink("Create Staff Member", "Create", "PartnerStaffMember")
+        <br /><br />@Html.ActionLink("Create Town", "Create", "Town")
+        <hr />
+        @Html.ActionLink("Household asset values", "Index", "HAssetValue")
+        <hr />
+        @Html.ActionLink("List staff members", "Index", "PartnerStaffMember") @Html.Raw(" | ")
+        @Html.ActionLink("List towns", "Index", "Town")
+        <hr />
+        @Html.ActionLink("Basic data stats", "BasicStats")
+        <p></p>
+    }
+    else if (User.IsInRole(Constants.STAFF_MEMBER))
+    {
+        <h3>StaffMember menu</h3>
+        @Html.ActionLink("Create Beneficiary", "Create", "Beneficiary")
+        <br /><br />@Html.ActionLink("List beneficiaries", "Index", "Beneficiary")
+    }
+    else
+    {
+        <p>???</p>
+    }
+}
+else
+{
+
+<div class="jumbotron">
+    <h1>Upaya Web App</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2><a href="http://www.upayasv.org/">Upaya Social Ventures</a></h2>
+        <p>Click here to visit the Upaya Social Ventures web site.</p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</h2>
+        <p>Click here to login into the Web app.</p>
+    </div>
+</div>
+    
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="73da79fbdc144df68e7255c4704b03a9" Name="Diagram1" ZoomLevel="98" >
+        <EntityTypeShape EntityType="DataModel.PartnerCompany" Width="1.5" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="DataModel.Town" Width="1.5" PointX="3" PointY="0.625" />
+        <EntityTypeShape EntityType="DataModel.Country" Width="1.5" PointX="5.5" PointY="0.625" />
+        <AssociationConnector Association="DataModel.TownCountry" />
+        <EntityTypeShape EntityType="DataModel.Beneficiary" Width="1.5" PointX="0.5" PointY="4.125" />
+        <EntityTypeShape EntityType="DataModel.Gender" Width="1.5" PointX="8" PointY="0.625" />
+        <AssociationConnector Association="DataModel.BeneficiaryGender" />
+        <EntityTypeShape EntityType="DataModel.Religion" Width="1.5" PointX="10.125" PointY="0.625" />
+        <EntityTypeShape EntityType="DataModel.Caste" Width="1.5" PointX="5.5" PointY="7.75" />
+        <AssociationConnector Association="DataModel.ReligionBeneficiary" />
+        <AssociationConnector Association="DataModel.TownBeneficiary" />
+        <EntityTypeShape EntityType="DataModel.Disability" Width="1.5" PointX="9.5" PointY="4.75" />
+        <EntityTypeShape EntityType="DataModel.EducationLevel" Width="1.5" PointX="9.5" PointY="6.5" />
+        <AssociationConnector Association="DataModel.EducationLevelBeneficiary" />
+        <EntityTypeShape EntityType="DataModel.Adult" Width="1.5" PointX="5" PointY="9.375" />
+        <AssociationConnector Association="DataModel.GenderAdult" />
+        <AssociationConnector Association="DataModel.EducationLevelAdult" />
+        <EntityTypeShape EntityType="DataModel.AdultRelationship" Width="1.5" PointX="7.25" PointY="9.375" />
+        <AssociationConnector Association="DataModel.BeneficiaryAdult" />
+        <EntityTypeShape EntityType="DataModel.Child" Width="1.5" PointX="3" PointY="11.125" />
+        <EntityTypeShape EntityType="DataModel.ChildRelationship" Width="1.5" PointX="7.125" PointY="12.375" />
+        <AssociationConnector Association="DataModel.GenderChild" />
+        <AssociationConnector Association="DataModel.ChildBeneficiary" />
+        <EntityTypeShape EntityType="DataModel.SchoolType" Width="1.5" PointX="9.75" PointY="12.125" />
+        <AssociationConnector Association="DataModel.SchoolTypeChild" />
+        <EntityTypeShape EntityType="DataModel.ClassLevel" Width="1.5" PointX="9.75" PointY="13.75" />
+        <AssociationConnector Association="DataModel.ClassLevelChild" />
+        <EntityTypeShape EntityType="DataModel.PartnerStaffMember" Width="1.875" PointX="0.5" PointY="14.25" />
+        <EntityTypeShape EntityType="DataModel.StaffType" Width="1.5" PointX="9.5" PointY="8.125" />
+        <AssociationConnector Association="DataModel.GenderPartnerStaffMember" />
+        <AssociationConnector Association="DataModel.StaffTypePartnerStaffMember" />
+        <EntityTypeShape EntityType="DataModel.Language" Width="1.5" PointX="9.5" PointY="2.75" />
+        <AssociationConnector Association="DataModel.LanguageBeneficiary" />
+        <AssociationConnector Association="DataModel.CasteBeneficiary" />
+        <AssociationConnector Association="DataModel.PartnerCompanyPartnerStaffMember" />
+        <EntityTypeShape EntityType="DataModel.PartnerAdmin" Width="1.5" PointX="0.625" PointY="18.75" />
+        <AssociationConnector Association="DataModel.PartnerCompanyPartnerAdmin" />
+        <EntityTypeShape EntityType="DataModel.AssetType" Width="1.5" PointX="9.25" PointY="17.5" />
+        <EntityTypeShape EntityType="DataModel.HouseholdAsset" Width="1.5" PointX="5.125" PointY="17.5" />
+        <AssociationConnector Association="DataModel.HouseholdAsset2AssetType" />
+        <AssociationConnector Association="DataModel.Beneficiary2HouseholdAsset" />
+        <AssociationConnector Association="DataModel.Child2ChildRelationship" />
+        <AssociationConnector Association="DataModel.Adult2AdultRelationship" />
+        <EntityTypeShape EntityType="DataModel.Meals" Width="1.5" PointX="0.5" PointY="21.125" />
+        <AssociationConnector Association="DataModel.Beneficiary2Meals" />
+        <EntityTypeShape EntityType="DataModel.MealType" Width="1.5" PointX="3" PointY="19.375" />
+        <EntityTypeShape EntityType="DataModel.FoodSourceType" Width="1.5" PointX="3" PointY="21.375" />
+        <EntityTypeShape EntityType="DataModel.Logins" Width="1.5" PointX="9.25" PointY="19.375" />
+        <EntityTypeShape EntityType="DataModel.HAssetValue" Width="1.5" PointX="5.25" PointY="20.625" />
+        <AssociationConnector Association="DataModel.HAssetValue2AssetType" />
+        <AssociationConnector Association="DataModel.PartnerCompany2HAssetValue" />
+        <EntityTypeShape EntityType="DataModel.SchoolDistance" Width="1.5" PointX="9.75" PointY="15.375" />
+        <AssociationConnector Association="DataModel.Child2SchoolDistance" />
+        <EntityTypeShape EntityType="DataModel.Occupation" Width="1.5" PointX="9.875" PointY="10.125" />
+        <EntityTypeShape EntityType="DataModel.State" Width="1.5" PointX="5.5" PointY="2.75" />
+        <AssociationConnector Association="DataModel.State2Country" />
+        <EntityTypeShape EntityType="DataModel.District" Width="1.5" PointX="5.5" PointY="5.375" />
+        <AssociationConnector Association="DataModel.District2State" />
+        <AssociationConnector Association="DataModel.Town2State" />
+        <AssociationConnector Association="DataModel.Town2District" />
+        <EntityTypeShape EntityType="DataModel.SchoolDayPerWeek" Width="1.5" PointX="9.375" PointY="21.625" />
+        <AssociationConnector Association="DataModel.SchoolDaysPerWeek2Child" />
+        <EntityTypeShape EntityType="DataModel.MajorExpensesInfo" Width="1.5" PointX="0.5" PointY="25.5" />
+        <AssociationConnector Association="DataModel.Beneficiary2MajorExpenses" />
+        <EntityTypeShape EntityType="DataModel.HealthCareInfo" Width="1.5" PointX="2.625" PointY="23.25" />
+        <AssociationConnector Association="DataModel.Beneficiary2HealthCareInfo" />
+        <EntityTypeShape EntityType="DataModel.HcProviderType" Width="1.5" PointX="4.5" PointY="23.25" />
+        <EntityTypeShape EntityType="DataModel.HealthIssueType" Width="1.5" PointX="4.5" PointY="24.75" />
+        <EntityTypeShape EntityType="DataModel.MedSourceType" Width="1.5" PointX="6.25" PointY="23.25" />
+        <EntityTypeShape EntityType="DataModel.GovernmentServicesInfo" Width="1.5" PointX="8.5" PointY="23.375" />
+        <EntityTypeShape EntityType="DataModel.GovCardType" Width="1.5" PointX="10.625" PointY="23.375" />
+        <EntityTypeShape EntityType="DataModel.GovServiceType" Width="1.5" PointX="10.625" PointY="25.125" />
+        <AssociationConnector Association="DataModel.Beneficiary2GovernmentServices" />
+        <EntityTypeShape EntityType="DataModel.HousingInfo" Width="1.5" PointX="0.5" PointY="29.875" />
+        <EntityTypeShape EntityType="DataModel.NumberOfRoomsType" Width="1.5" PointX="2.625" PointY="26.5" />
+        <EntityTypeShape EntityType="DataModel.RoofMaterialType" Width="1.5" PointX="4.5" PointY="26.5" />
+        <EntityTypeShape EntityType="DataModel.WallMaterialType" Width="1.5" PointX="6.5" PointY="26.5" />
+        <EntityTypeShape EntityType="DataModel.WaterSourceType" Width="1.5" PointX="2.625" PointY="28.25" />
+        <EntityTypeShape EntityType="DataModel.ToiletType" Width="1.5" PointX="4.5" PointY="28.25" />
+        <EntityTypeShape EntityType="DataModel.CookingEnergyType" Width="1.5" PointX="6.5" PointY="28.25" />
+        <AssociationConnector Association="DataModel.HousingInfo2NumberOfRooms" />
+        <AssociationConnector Association="DataModel.HousingInfo2RoofMaterial" />
+        <AssociationConnector Association="DataModel.HousingInfo2WallMaterial" />
+        <AssociationConnector Association="DataModel.HousingInfo2CookingEnergyType" />
+        <AssociationConnector Association="DataModel.Beneficiary2HousingInfo" />
+        <AssociationConnector Association="DataModel.HousingInfo2ToiletType" />
+        <EntityTypeShape EntityType="DataModel.HouseQualityType" Width="1.5" PointX="8.5" PointY="27.125" />
+        <AssociationConnector Association="DataModel.HousingInfoHouseQuality" />
+        <AssociationConnector Association="DataModel.Beneficiary2PriOccupation" />
+        <AssociationConnector Association="DataModel.Beneficiary2SecOccupation" />
+        <AssociationConnector Association="DataModel.Religion2HousingInfo" />
+        <AssociationConnector Association="DataModel.Caste2HousingInfo" />
+        <EntityTypeShape EntityType="DataModel.WaterSourceDistanceType" Width="1.5" PointX="4.5" PointY="31" />
+        <EntityTypeShape EntityType="DataModel.HouseOwnershipType" Width="1.5" PointX="2.75" PointY="31" />
+        <AssociationConnector Association="DataModel.HouseOwnershipType2HousingInfo" />
+        <AssociationConnector Association="DataModel.WaterSourceDistanceType2HousingInfo" />
+        <EntityTypeShape EntityType="DataModel.SavingsType" Width="1.5" PointX="8.5" PointY="31" />
+        <EntityTypeShape EntityType="DataModel.LoanPurposeType" Width="1.5" PointX="10.375" PointY="31" />
+        <EntityTypeShape EntityType="DataModel.GrainType" Width="1.5" PointX="8.5" PointY="29.375" />
+        <EntityTypeShape EntityType="DataModel.PulseType" Width="1.5" PointX="10.375" PointY="29.375" />
+        <EntityTypeShape EntityType="DataModel.VegetableType" Width="1.5" PointX="10.375" PointY="32.75" />
+        <EntityTypeShape EntityType="DataModel.PKG_M_Type" Width="1.5" PointX="8.5" PointY="32.75" />
+        <EntityTypeShape EntityType="DataModel.HistoryRec" Width="1.5" PointX="3" PointY="33.5" />
+        <EntityTypeShape EntityType="DataModel.AvgNonVegPerMType" Width="1.5" PointX="7.25" PointY="20.875" />
+        <AssociationConnector Association="DataModel.AvgNonVegPerMType2Meals" />
+        <EntityTypeShape EntityType="DataModel.PKGPerMType" Width="1.5" PointX="7.25" PointY="18.875" />
+        <AssociationConnector Association="DataModel.PKGPerMType2Meals" />
+        <AssociationConnector Association="DataModel.PrimaryOccupation2Adult" />
+        <AssociationConnector Association="DataModel.SecondaryOccupation2Adult" />
+        <EntityTypeShape EntityType="DataModel.WhyNotInSchoolType" Width="1.5" PointX="5.375" PointY="33.625" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

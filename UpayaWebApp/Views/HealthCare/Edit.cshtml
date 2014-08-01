@@ -1,0 +1,92 @@
+﻿@model UpayaWebApp.HealthCareInfo
+
+@{
+    ViewBag.Title = "Edit HealthCare";
+}
+
+<h2>Edit HealthCare info for beneficiary @Model.Beneficiary.Name</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.HcProviders, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @foreach (CheckBoxData cbd in ViewBag.HcProvidersCBData)
+                {
+                    @Html.CheckBox(cbd.Id.ToString(), cbd.Checked)
+                    @Html.Raw("&nbsp;" + cbd.Title + "<br />\n")
+                }
+                @Html.ValidationMessageFor(model => model.HcProviders)
+            </div>
+        </div>
+        <!--
+        <div class="form-group">
+            Html.LabelFor(model => model.HcFrequencyQ, new { class = "control-label col-md-2" })
+            <div class="col-md-10">
+                Html.EditorFor(model => model.HcFrequencyQ)
+                Html.ValidationMessageFor(model => model.HcFrequencyQ)
+            </div>
+        </div>
+
+        <div class="form-group">
+            Html.LabelFor(model => model.HealthIssues, new { class = "control-label col-md-2" })
+            <div class="col-md-10">
+                foreach (CheckBoxData cbd in ViewBag.HealthIssuesCBData)
+                {
+                    Html.CheckBox(cbd.Id.ToString(), cbd.Checked)
+                    Html.Raw("&nbsp;" + cbd.Title + "<br />\n")
+                }
+                Html.ValidationMessageFor(model => model.HealthIssues)
+            </div>
+        </div>
+
+        <div class="form-group">
+            Html.LabelFor(model => model.TreatmentCostsQ, new { class = "control-label col-md-2" })
+            <div class="col-md-10">
+                Html.EditorFor(model => model.TreatmentCostsQ)
+                Html.ValidationMessageFor(model => model.TreatmentCostsQ)
+            </div>
+        </div>
+
+        <div class="form-group">
+            Html.LabelFor(model => model.MedSources, new { class = "control-label col-md-2" })
+            <div class="col-md-10">
+                foreach (CheckBoxData cbd in ViewBag.MedSourcesCBData)
+                {
+                    Html.CheckBox(cbd.Id.ToString(), cbd.Checked)
+                    Html.Raw("&nbsp;" + cbd.Title + "<br />\n")
+                }
+                Html.ValidationMessageFor(model => model.MedSources)
+            </div>
+        </div>
+        -->
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.OrigEntryDate, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("OrigEntryDate", FormatHelper.FormatOrigDate(Model.OrigEntryDate))
+                @Html.ValidationMessageFor(model => model.OrigEntryDate)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to beneficiary", "Details", "Beneficiary", new { id = Model.Id }, null)
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

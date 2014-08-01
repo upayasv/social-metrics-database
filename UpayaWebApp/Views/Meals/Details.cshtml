@@ -1,0 +1,92 @@
+﻿@model UpayaWebApp.Meals
+
+@{
+    ViewBag.Title = "Meals Details";
+}
+
+<h2>Meals details for beneficiary @ViewBag.Beneficiary.Name</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AvgMealsPerDay)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AvgMealsPerDay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AvgNonVegPerMTypeId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AvgNonVegPerMType.Title)
+        </dd>
+        <!--
+        <dt>
+            @Html.DisplayNameFor(model => model.AnyNonVegetarian)
+        </dt>
+        <dd>
+            @FormatHelper.FormatBool(Model.AnyNonVegetarian)
+        </dd>
+        
+        <dt>
+            _Html.DisplayNameFor(model => model.AvgNonVegPerMonth)
+        </dt>
+        <dd>
+            _Html.DisplayFor(model => model.AvgNonVegPerMonth)
+        </dd>
+        
+        <dt>
+            Html.DisplayNameFor(model => model.MealTypes)
+        </dt>
+        <dd>
+            Html.Raw(ViewBag.MealTypesValue)
+        </dd>
+        -->
+        <dt>
+            @Html.DisplayNameFor(model => model.FoodSourceTypes)
+        </dt>
+        <dd>
+            @Html.Raw(ViewBag.FoodSourceTypesValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MilkAsideAmount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MilkAsideAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CEGrains)
+        </dt>
+        <dd>
+            @Html.Raw(ViewBag.CEGrainsValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CEPulse)
+        </dt>
+        <dd>
+            @Html.Raw(ViewBag.CEPulseValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CEVegetables)
+        </dt>
+        <dd>
+            @Html.Raw(ViewBag.CEVegetablesValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PKGPerMTypeId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PKGPerMType.Title)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to beneficiary", "Details", "Beneficiary", new { id = Model.Id }, null)
+</p>

@@ -1,0 +1,51 @@
+﻿@model UpayaWebApp.HealthCareInfo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>HealthCare Details for beneficiary @Model.Beneficiary.Name</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HcProviders)
+        </dt>
+        <dd>
+            @Html.Raw(ViewBag.HcProvidersValue)
+        </dd>
+        <!--
+        <dt>
+            _Html.DisplayNameFor(model => model.HcFrequencyQ)
+        </dt>
+        <dd>
+            _Html.DisplayFor(model => model.HcFrequencyQ)
+        </dd>
+
+        <dt>
+            _Html.DisplayNameFor(model => model.HealthIssues)
+        </dt>
+        <dd>
+            _Html.Raw(ViewBag.HealthIssuesValue)
+        </dd>
+
+        <dt>
+            _Html.DisplayNameFor(model => model.TreatmentCostsQ)
+        </dt>
+        <dd>
+            _Html.DisplayFor(model => model.TreatmentCostsQ)
+        </dd>
+
+        <dt>
+            _Html.DisplayNameFor(model => model.MedSources)
+        </dt>
+        <dd>
+            _Html.Raw(ViewBag.MedSourcesValue)
+        </dd>
+        -->
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to beneficiary", "Details", "Beneficiary", new { id = Model.Id }, null)
+</p>

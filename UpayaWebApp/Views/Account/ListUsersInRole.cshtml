@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "ListUsersInRole";
+}
+
+<h2>List of users in role '@ViewBag.RoleName'</h2>
+
+@foreach (var uname in ViewBag.UserNames)
+{
+    <br />@uname
+}

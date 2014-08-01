@@ -1,0 +1,114 @@
+﻿@model UpayaWebApp.HousingInfo
+
+@{
+    ViewBag.Title = "Housing Info Details";
+}
+
+<h2>Housing info details for beneficiary @Model.Beneficiary.Name</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.ReligionId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Religion.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CasteId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Caste.Title)
+        </dd>
+        <!--
+        <dt>
+            Html.DisplayNameFor(model => model.HouseQualityTypeId)
+        </dt>
+        <dd>
+            Html.DisplayFor(model => model.HouseQualityType.Title)
+        </dd>
+        -->
+        <dt>
+            @Html.DisplayNameFor(model => model.HasElectricity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HasElectricity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfRoomsTypeId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfRoomsType.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RoofMaterialTypeId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RoofMaterialType.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WaterSourceTypes)
+        </dt>
+        <dd>
+            @Html.Raw(ViewBag.WaterSourceTypesValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WaterSourceDistanceTypeId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WaterSourceDistanceType.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WallMaterialTypeId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WallMaterialType.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CookingEnergyTypeId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CookingEnergyType.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ToiletTypeId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ToiletType.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HouseOwnershipTypeId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HouseOwnershipType.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SavingsTypes)
+        </dt>
+        <dd>
+            @Html.Raw(ViewBag.SavingsTypesValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoanPurposeTypes)
+        </dt>
+        <dd>
+            @Html.Raw(ViewBag.LoanPurposeTypesValue)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to beneficiary", "Details", "Beneficiary", new { id = Model.Id }, null)
+</p>

@@ -1,0 +1,180 @@
+﻿@model UpayaWebApp.Child
+
+@{
+    ViewBag.Title = "Edit Child";
+}
+
+<h2>Edit child related to beneficiary @ViewBag.Beneficiary.Name</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.GenderId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("GenderId", String.Empty)
+                @Html.ValidationMessageFor(model => model.GenderId)
+            </div>
+        </div>
+        <!--
+        <div class="form-group">
+            Html.LabelFor(model => model.ChildRelationshipId, new { class = "control-label col-md-2" })
+            <div class="col-md-10">
+                Html.DropDownList("ChildRelationshipId", String.Empty)
+                Html.ValidationMessageFor(model => model.ChildRelationshipId)
+            </div>
+        </div>
+        -->
+        <div class="form-group">
+            @Html.LabelFor(model => model.Disability, new { @class = "control-label col-md-2" })
+            <table><tr><td valign="top">
+                <div class="col-md-10">
+                    @Html.CheckBox("Disability", Model.Disability)
+                    @Html.ValidationMessageFor(model => model.Disability)
+                </div>
+            </td><td>
+                <div>
+                    @foreach (CheckBoxData cbd in ViewBag.DisabilitiesCBData)
+                    {
+                        @Html.CheckBox(cbd.Id.ToString(), cbd.Checked)
+                        @Html.Raw("&nbsp;" + cbd.Title + "<br />\n")
+                    }
+                </div>
+            </td></tr></table>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EnrolledInSchool, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.CheckBox("EnrolledInSchool", new { onchange = "EnrolledInSchoolClicked()" })*
+                @Html.ValidationMessageFor(model => model.EnrolledInSchool)
+            </div>
+        </div>
+
+        <table>
+            <tr><th>Fill IF the child is enrolled in school</th><th> </th>
+                <th>Fill IF the child is NOT enrolled in school<br />(Why is not enrolled in school)</th></tr>
+            <tr>
+                <td valign="top" id="TDE">
+                    @Html.LabelFor(model => model.SchoolTypeId) <br />
+                    @Html.DropDownList("SchoolTypeId", String.Empty) <br />
+                    @Html.ValidationMessageFor(model => model.SchoolTypeId) <br />
+
+                    @Html.LabelFor(model => model.MonthlyEduExpenses) <br />
+                    @Html.EditorFor(model => model.MonthlyEduExpenses) <br />
+                    @Html.ValidationMessageFor(model => model.MonthlyEduExpenses) <br />
+                    <!--
+                    Html.LabelFor(model => model.SchoolAttendance) <br />
+                    Html.DropDownList("SchoolAttendance", String.Empty) <br />
+                    Html.ValidationMessageFor(model => model.SchoolAttendance)
+                    -->
+                </td>
+                <td width="10"> </td>
+                <td valign="top" id="TDNE">
+                    <div>
+                        @foreach (CheckBoxData cbd in ViewBag.WhyNotInSchoolCBData)
+                        {
+                            @Html.CheckBox(cbd.Id.ToString(), cbd.Checked)
+                            @Html.Raw("&nbsp;" + cbd.Title + "<br />\n")
+                        }
+                    </div>
+
+                    <!--
+                    _Html.CheckBox("SchoolAvailability")
+                    _Html.LabelFor(model => model.SchoolAvailability) <br />
+                    _Html.ValidationMessageFor(model => model.SchoolAvailability) <br />
+                    -->
+                </td>
+            </tr>
+        </table>
+        <!--
+        <div class="form-group">
+            Html.LabelFor(model => model.BirthDay, new { class = "control-label col-md-2" })
+            <div class="col-md-10">
+                Html.EditorFor(model => model.BirthDay)
+                Html.ValidationMessageFor(model => model.BirthDay)
+            </div>
+        </div>
+
+        <div class="form-group">
+            Html.LabelFor(model => model.BirthMonth, new { class = "control-label col-md-2" })
+            <div class="col-md-10">
+                Html.EditorFor(model => model.BirthMonth)
+                Html.ValidationMessageFor(model => model.BirthMonth)
+            </div>
+        </div>
+        -->
+        <div class="form-group">
+            @Html.LabelFor(model => model.BirthYear, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.BirthYear)
+                @Html.ValidationMessageFor(model => model.BirthYear)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.OrigEntryDate, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("OrigEntryDate", FormatHelper.FormatOrigDate(Model.OrigEntryDate))
+                @Html.ValidationMessageFor(model => model.OrigEntryDate)
+            </div>
+        </div>
+
+        <input type="hidden" name="BeneficiaryId" id="BeneficiaryId" value="@Model.BeneficiaryId" />
+        <input type="hidden" name="ChildRelationshipId" id="ChildRelationshipId" value="@Model.ChildRelationshipId" />
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index", new { bid = ViewBag.Beneficiary.Id }) |
+    @Html.ActionLink("Back to beneficiary", "Details", "Beneficiary", new { id = ViewBag.Beneficiary.Id }, null)
+</div>
+
+<script type="text/javascript">
+    function EnrolledInSchoolClicked() {
+        //alert('Clicked! ' + document.getElementById('EnrolledInSchool').checked);
+        var enrolled = document.getElementById('EnrolledInSchool').checked;
+        document.getElementById('SchoolTypeId').disabled = !enrolled;
+        //document.getElementById('ClassLevelId').disabled = !enrolled;
+        //document.getElementById('SchoolDistanceId').disabled = !enrolled;
+        document.getElementById('MonthlyEduExpenses').disabled = !enrolled;
+        //document.getElementById('SchoolAttendance').disabled = !enrolled;
+        if (enrolled)
+            document.getElementById('TDE').bgColor = "White";
+        else
+            document.getElementById('TDE').bgColor = "LightGray";
+
+        document.getElementById('WNIS1').disabled = enrolled;
+        document.getElementById('WNIS2').disabled = enrolled;
+        document.getElementById('WNIS3').disabled = enrolled;
+        document.getElementById('WNIS4').disabled = enrolled;
+        document.getElementById('WNIS5').disabled = enrolled;
+        document.getElementById('WNIS6').disabled = enrolled;
+        document.getElementById('WNIS7').disabled = enrolled;
+        if (enrolled)
+            document.getElementById('TDNE').bgColor = "LightGray";
+        else
+            document.getElementById('TDNE').bgColor = "White";
+    }
+
+    EnrolledInSchoolClicked();
+</script>

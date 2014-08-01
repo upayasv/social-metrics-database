@@ -1,0 +1,48 @@
+﻿@model UpayaWebApp.GovernmentServicesInfo
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>GovernmentServicesInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GovCards)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GovCards)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherCardDescr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherCardDescr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GovServices)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GovServices)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

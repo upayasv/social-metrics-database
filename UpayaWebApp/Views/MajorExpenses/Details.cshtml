@@ -1,0 +1,93 @@
+﻿@model UpayaWebApp.MajorExpensesInfo
+
+@{
+    ViewBag.Title = "Major Expenses Details";
+}
+
+<h2>Major expenses details for beneficiary @Model.Beneficiary.Name</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FoodM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FoodM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RentM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RentM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SchoolFeesM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SchoolFeesM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WaterAndElecM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WaterAndElecM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CableTvDishM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CableTvDishM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoanRepaymentsM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LoanRepaymentsM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlcoholM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AlcoholM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CinemaFestivFunctA)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CinemaFestivFunctA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoomRelA)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LoomRelA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherExpM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OtherExpM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherExpDescr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OtherExpDescr)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to beneficiary", "Details", "Beneficiary", new { id = Model.Id }, null)
+</p>

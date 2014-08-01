@@ -1,0 +1,93 @@
+﻿@model IEnumerable<UpayaWebApp.MajorExpensesInfo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RentM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SchoolFeesM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WaterAndElecM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CableTvDishM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LoanRepaymentsM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlcoholM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CinemaFestivFunctA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LoomRelA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OtherExp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OtherExpDescr)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FoodM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RentM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SchoolFeesM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WaterAndElecM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CableTvDishM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LoanRepaymentsM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlcoholM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CinemaFestivFunctA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LoomRelA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OtherExp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OtherExpDescr)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

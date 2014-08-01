@@ -1,0 +1,128 @@
+﻿@model UpayaWebApp.Adult
+
+@{
+    ViewBag.Title = "Adult Details";
+}
+
+<h2>Adult Details (beneficiary: @Html.ActionLink(Model.Beneficiary.Name, "Details", "Beneficiary", new { id = Model.Beneficiary.Id }, null))</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gender.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdultRelationship.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AdultRelationship.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthDay)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BirthDay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthMonth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BirthMonth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthYear)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BirthYear)
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.Disability)
+        </dt>
+
+        <dd>
+            @FormatHelper.FormatBool(Model.Disability)
+            @if(Model.Disability)
+            {
+                @Html.Raw(" " + ViewBag.DisabilitiesValue)
+            }
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EducationLevel.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EducationLevel.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimaryOccupationId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrimaryOccupation.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondaryOccupationId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SecondaryOccupation.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimaryWorkDaysM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrimaryWorkDaysM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondaryWorkDaysM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SecondaryWorkDaysM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimaryDailyWage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrimaryDailyWage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondaryDailyWage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SecondaryDailyWage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmplSameCompany)
+        </dt>
+
+        <dd>
+            @FormatHelper.FormatBool(Model.EmplSameCompany)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index", new { bid = Model.BeneficiaryId }) |
+    @Html.ActionLink("Back to beneficiary", "Details", "Beneficiary", new { id = Model.Beneficiary.Id }, null)
+</p>

@@ -1,0 +1,144 @@
+﻿@model UpayaWebApp.Child
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Child</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnrolledInSchool)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnrolledInSchool)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SchoolAvailability)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SchoolAvailability)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CanAffordSchool)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CanAffordSchool)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DistanceToSchool)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DistanceToSchool)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MonthlyEduExpenses)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MonthlyEduExpenses)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SchoolAttendance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SchoolAttendance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthDay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthDay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthMonth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthMonth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Disability.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Disability.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Beneficiary.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Beneficiary.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SchoolType.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SchoolType.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassLevel.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClassLevel.Title)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
